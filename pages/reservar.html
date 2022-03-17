@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar</title>
+</head>
+<body>
+    <header>
+        <h1>ReservaOnline</h1>
+        <h2>Datos de su reserva</h2>
+    </header>
+    <section>
+        <h3>Dia y hora</h3>
+        <input type="date" name="day" id="">
+
+    </section>
+    <section>
+        <h3>Mesa</h3>
+        <label for="mesa">Afuera</label>
+        <input type="radio" name="mesa" value="Afuera">
+        <label for="mesa">Adentro</label>
+        <input type="radio" name="mesa" value="Adentro">
+    </section>
+    <section>
+        <h3>Cantidad de personas</h3>
+        <label for="personas">Cantidad de adultos (1-12):</label>
+        <input type="number" name="personas" min="1" max="12">
+        <label for="personas">Cantidad de niños (0-12):</label>
+        <input type="number" name="personas" min="0" max="12">
+    </section>
+    <section>
+        <h3>Menú</h3>
+        <p>
+            <label for="menu">Selección del menú:</label>
+                <select multiple name="menu">
+                    <option>Elegir en el local</option>
+                    <option>Pancho (200)</option>
+                    <option>Hamburguesa (300)</option>
+                    <option>cerveza(250)</option>
+                    <option>Vino(500)</option>
+                    <option>Lemon pie(150)</option>
+                    <option>Torta de chocolate(200)</option>
+                </select>
+        </p>
+    </section>
+    <section>
+        <h3>Datos de quien reserva</h3>
+        <p>
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre completo">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Ingresa tu email">
+        </p>
+
+        <p>
+            <label for="tel">Telefono</label>
+            <input type="tel" name="tel" placeholder="Ingresa tu telefono">
+        </p>
+
+    </section>
+    <a href="../pages/pago.html"><input type="submit" value="Enviar"></a>
+    
+</body>
+</html>

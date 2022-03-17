@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+</head>
+<body>
+    <header>
+        <h1>Pettra</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../pages/dueñosmain.html">Main</a></li>
+            <li><a href="../pages/dueñosinfo.html">Datos</a></li>
+            <li><a href="../pages/reservas.html">Reservas</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h3>Logo</h3>
+        <img src="../assets/Logos/Petra logo.jpg" alt="pettralogo">
+        <!--Subir una foto formulario-->
+        <input type="file" name="archivo">
+        <input type="hidden" name="escondido">
+        <input type="submit" value="Subir">
+    </section>
+    <section>
+        <h3>Fotos</h3>
+        <img src="../assets/Images/Pettra1.jpg" alt="pettra1" width="30%" height="30%">
+        <img src="../assets/Images/Pettra3.jpg" alt="pettra2" width="30%" height="30%">
+        <img src="../assets/Images/Pettra3.jpg" alt="pettra3" width="30%" height="30%">
+        <input type="file" name="archivo" multiple>
+        <input type="hidden" name="escondido">
+        <input type="submit" value="Subir">
+    </section>
+    <section>
+        <h3>Descripcion</h3>
+        <textarea name="descripcion" cols="30" rows="10"></textarea>
+        <input type="submit" value="Subir">
+    </section>
+    <section>
+        <h3>Menú</h3>
+        <section>
+            <nav>
+                <ul>
+                    <li> <a href="#comidarapida">Comida Rapida</a> </li>
+                    <li> <a href="#bebidas">Bebidas</a> </li>
+                    <li> <a href="#postres">Postres</a></li>
+                </ul>
+            </nav>
+            <ul id="comidarapida">
+                <li>
+                    <h3>Pancho</h3>
+                    <img src="../assets/Images/Pancho.jpg" alt="pancho">
+                    <h5>Pan, Salchica, Aderezo, Salsa a elección</h5>
+                </li>
+                <li>
+                    <h3>Hamburguesa</h3>
+                    <img src="../assets/Images/Hamburguesa.jpg" alt="hamburguesa">
+                    <h5>Pan, medallon de carne, Aderezo, Salsa a elección, Tomate y lechuga, Huevo, sale con porcion de papas fritas </h5>
+                </li>
+            </ul>
+            <ul id="bebidas">
+                <li>
+                    <h3>Cerveza</h3>
+                    <img src="../assets/Images/cerveza.jpg" alt="cerveza">
+                    <h5>Cerveza artesanal rubia de amargura media</h5>
+                </li>
+                <li>
+                    <h3>Vino</h3>
+                    <img src="../assets/Images/vino.jpg" alt="vino">
+                    <h5>Vino tinto producido en la mejor bodega mendocina</h5>
+                </li>
+            </ul>
+            <ul id="postres">
+                <li>
+                    <h3>Lemon Pie</h3>
+                    <img src="../assets/Images/lemonpie.jpg" alt="lemonpie">
+                    <h5>Postre clasico con la combinacion perfecta de dulzura y acides</h5>
+                </li>
+                <li>
+                    <h3>Torta de cholotae</h3>
+                    <img src="../assets/Images/tortachocolate.jpg" alt="tortachocolate">
+                    <h5>La mejor opcion para los amantes de lo dulce</h5>
+                </li>
+            </ul>
+        </section>
+        <form action="procesar.php" method="post">
+            <fieldset>
+                <label for="menu">Cantidad de menus:</label>
+                <input type="number" name="menu" min="1">
+            </fieldset>
+            <fieldset>
+                <label for="menu">Menú a modificar:</label>
+                <input type="number" name="menu" min="1">
+                <input type="text" name="nombremenu" placeholder="Nombre del menú">
+            </fieldset>
+            <fieldset>
+                <input type="text" name="nombrecomida" placeholder="Nombre del plato">
+                <label for="fotoplato">Foto del plato</label>
+                <input type="file" name="fotoplato">
+                <input type="hidden" name="escondido">
+                <textarea name="descripcionplato" cols="30" rows="10" placeholder="Descripcion del plato"></textarea>
+                <input type="number" name="precio" placeholder="Precio del plato">
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar formulario">
+                <input type="button" value="Sin acciones">
+            </p>
+        </form>
+        <section>
+            <h3>Fecha y horarios</h3>
+            <form action="procesar.php" method="post">
+                <input type="date" name="Fecha">
+                <input type="time" name="hora" max="23:30:00" min="10:00:00">
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar formulario">
+                    <input type="button" value="Sin acciones">
+                </p>
+            </form>
+        </section>
+    </section>
+</body>
+</html>
