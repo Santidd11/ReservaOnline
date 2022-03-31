@@ -1,49 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReservaOnline</title>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
-<body>
-    <header>
-        <h1>ReservaOnline</h1>
+<body class="local">
+    <header class="header">
+        <a class="nombre" href="../index.html">
+            <h1 class="reservaonline">ReservaOnline</h1>
+        </a>
+        <!--Barra de navegacion-->
+        <nav>
+            <ul class="navegacion">
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link" href="../index.html">Inicio</a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link"  href="https://goo.gl/maps/Tqo8Wybzqh3nLFT19" target="_blanck">Cercanos a mi</a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link"  href="../pages/lista.html">Locales</a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link"  href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <section>
 
-        <h3>
-            <a href="https://goo.gl/maps/Tqo8Wybzqh3nLFT19" target="_blanck">Cercanos a mi</a> 
-        </h3>
-        
-        <h3>Tipo de Local</h3>
-        <select name="Tipo" id="">
-            <option value="buffet">Buffet</option>
-            <option value="gourmet">Gourmet</option>
-            <option value="familiar">Familiar</option>
-            <option value="comida_rapida">Comida Rápida</option>
-            <option value="bar">Bar</option>
-            <option value="food_park">Food Park</option>
-        </select>
-
-        <p>
-            <input type="text" name="nombre" placeholder="Buscar por nombre">
-        </p>
-            
-        <input type="submit" value="Buscar Local">
-        <h5>
-            <a href="/pages/lista.html">Lista de locales</a>
-        </h5>
+    <section class="pages">
+        <!--Seccion que contiene todos los "botones" del index-->
+        <div>
+            <h3 class="pages__cercanos">
+                <a class="pages__cercanos__link" href="https://goo.gl/maps/Tqo8Wybzqh3nLFT19" target="_blanck">Cercanos a mi</a> 
+                <!--Nos dirige a una nueva ventana de google maps-->
+            </h3>
+        </div>
+        <div>
+            <label for="tipos" class="pages__tipo">Tipo de Local:</label>
+            <select name="tipos" class="pages__tipo">
+                <option value="buffet">Buffet</option>
+                <option value="gourmet">Gourmet</option>
+                <option value="familiar">Familiar</option>
+                <option value="comida_rapida">Comida Rápida</option>
+                <option value="bar">Bar</option>
+                <!--Podemos elegir el tipo de buffet que andamos buscando-->
+            </select>
+        </div>
+        <div>
+            <p class="pages__nombre">
+                <input class="pages__cercanos" type="text" name="nombre" placeholder="Buscar por nombre">
+                <!--Buscamos el local por su nombre, por ej "Pettra"-->
+            </p>
+        </div>
+        <div>
+            <a class="pages__buscar" href="./pages/lista.html">Buscar local</a>
+            <!--Este boton deberia filtrar los resultados de los formularios anteriores pero por ahora solo nos lleva a la lista completa de locales-->
+        </div>
+        <footer>
+            <a class="pages__lista" href="./pages/lista.html">Lista de locales</a>
+            <!--Nos muestra la lista completa de locales-->
+            <span class="pages__span"> | </span>
+            <a class="pages__contacto" href="./pages/contacto.html">Contacto</a>
+            <!--Nos lleva a la pagina de contacto-->
+        </footer>
     </section>
-    <aside>
-        <h5>
-            <a href="/pages/iniciosesion.html">Soy dueño</a>
-        </h5>
-    </aside>
-    <footer>
-        <h5>
-            <a href="/pages/contacto.html">Contacto</a>
-        </h5>
-    </footer>
+
 </body>
 </html>

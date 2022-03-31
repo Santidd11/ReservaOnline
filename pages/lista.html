@@ -1,58 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Locales</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
-    <header>
-        <h1>ReservaOnline</h1>
-        <h2>Lista de Locales</h2>
+<body class="local">
+    <header class="header">
+        <a class="nombre" href="../index.html">
+            <h1 class="reservaonline">ReservaOnline</h1>
+        </a>
+
+        <nav>
+            <ul class="navegacion">
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link" href="../index.html">Inicio</a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link"  href="https://goo.gl/maps/Tqo8Wybzqh3nLFT19" target="_blanck">Cercanos a mi</a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link"  href="../pages/lista.html">Locales</a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link"  href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li>Buffet</li>
-            <li>Gourmet</li>
-            <li>Familiar</li>
-            <li>Comida Rapida</li>
-            <li>Bar</li>
-            <li>Food Park</li>
-        </ul>
-    </nav>
-    <section>
-
-        <h3>Pettra</h3>
-
-        <img src="../assets/Logos/Petra logo.jpg" alt="pettralogo">
-
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et assumenda quasi laboriosam debitis, quam vitae, odit ab alias, praesentium numquam ad possimus! Delectus quidem itaque sequi consectetur fugiat, porro in!</h5>
-
-        <a href="../pages/local.html">Visitar</a>
-
-    </section>
-    <section>
-
-        <h3>Mcdonalds</h3>
-
-        <img src="../assets/Logos/Mcdonalds.png" alt="mcdonaldslogo">
-
-        <h5>McDonald's es una franquicia de restaurantes de comida rápida estadounidense con sede en Chicago, Illinois.​ Sus principales productos son las hamburguesas, las patatas fritas, los menús para el desayuno y los refrescos.</h5>
-
-        <a href="../pages/local.html">Visitar</a>
+        <nav class="menu__nav">
+            <ul class="navegacion--menu">
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#pettra">Buffet</a> </li>
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#meet">Gourmet</a> </li>
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#la25">Familiar</a></li>
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#mcdonalds">Comida rapida</a> </li>
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#uptown">Bar</a> </li>
+            </ul>
+        </nav>
+        <section class="locales">
+            <div class="comida" id="pettra">
+    
+                <h3 class="comida__nombre">Pettra</h3>    
+            </div>
+            <div></div>
+            <div>
+                <img class="comida__alt" src="../assets/Logos/Petra logo.jpg" alt="pettralogo">
+            </div>
+            <div>
+                <h5 class="comida__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et assumenda quasi laboriosam debitis, quam vitae, odit ab alias, praesentium numquam ad possimus! Delectus quidem itaque sequi consectetur fugiat, porro in!</h5>
         
-    </section>
-    <section>
-
-        <h3>KFC</h3>
-
-        <img src="../assets/Logos/kfc.jpg" alt="kfclogo">
-
-        <h5>Kentucky Fried Chicken, conocida oficialmente por sus siglas KFC, es una cadena de restaurantes de comida rápida estadounidense especializada en pollo frito, fundada por Harland D. Sanders, que pertenece al grupo Yum! Brands.</h5>
-
-        <a href="../pages/local.html">Visitar</a>
+                <a class="visitar" href="../pages/local.html">Visitar</a>
+            </div>
+            <div class="comida" id="mcdonalds">
+    
+                <h3 class="comida__nombre">Mcdonalds</h3>   
+            </div>
+            <div></div>
+            <div>
+                <img class="comida__imagen" src="../assets/Logos/Mcdonalds.png" alt="mcdonaldslogo">
+            </div>
+            <div>
+                <h5 class="comida__descripcion">McDonald's es una franquicia de restaurantes de comida rápida estadounidense con sede en Chicago, Illinois.​ Sus principales productos son las hamburguesas, las patatas fritas, los menús para el desayuno y los refrescos.</h5>
         
-    </section>
+                <a class="visitar" href="../pages/local.html">Visitar</a>
+            </div>
+            <div class="comida" id="uptown">
+    
+                <h3 class="comida__nombre">Uptown Bar</h3>
+            </div>
+            <div></div>
+            <div>
+                <img class="comida__imagen" src="../assets/Logos/uptownbar.jpg" alt="uptownbarlogo">
+            </div>
+            <div>
+                <h5 class="comida__descripcion">En el barrio conocido como Palermo Hollywood de Buenos Aires está The Uptown, el bar que recrea a la perfección una estación del subterráneo de Nueva York.</h5>
+        
+                <a class="visitar" href="../pages/local.html">Visitar</a>
+            </div>
+            <div class="comida" id="meet">
+                <h3 class="comida__nombre">Meet</h3>  
+            </div>
+            <div></div>
+            <div>
+                <img class="comida__imagen" src="..//assets/Logos/meet.jpg" alt="meetlogo">
+        
+            </div>
+            <div>
+                <h5 class="comida__descripcion">Un lugar ideal para compartir buenos momentos con quien mas quieras. Perfecto para los amantes del buen comer y la cocina de alto nivel.</h5>
+        
+                <a class="visitar" href="../pages/local.html">Visitar</a>
+            </div>
+            <div class="comida" id="la25">
+    
+                <h3 class="comida__nombre">Sandwicheria la 25</h3>
+            </div>
+            <div></div>
+            <div>
+                <img class="comida__imagen" src="../assets/Logos/la25.jpg" alt="la25logo">
+            </div>
+            <div>
+                <h5 class="comida__descripcion">El mejor restaurante para disfrutar de un excelente momento en familia. Ofrecemos un amplio menu de comidas aptas para todos los tipos de paladares.</h5>
+        
+                <a class="visitar" href="../pages/local.html">Visitar</a>
+            </div>
+        </section>
 </body>
 </html>

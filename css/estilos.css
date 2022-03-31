@@ -1,0 +1,502 @@
+@font-face {
+    font-family: "berolina";
+    src: url(../fonts/Berolina.ttf);
+}
+@font-face {
+    font-family: "mosk";
+    src: url(../fonts/Mosk\ Ultra-Bold\ 900.ttf);
+}
+
+@font-face {
+    font-family: "anton";
+    src: url(../fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: "lobster";
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: "bungee";
+    src: url(../fonts/Bungee-Regular.ttf);
+}
+
+@font-face {
+    font-family: "pacifico";
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: "alfa";
+    src: url(../fonts/AlfaSlabOne-Regular.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.local{
+    background-image: url(../assets/Images/fondo.png);
+}
+
+.reservaonline{
+    font-family: mosk;
+    text-align: center;
+    background-color: #F0A500;
+    margin: 0%;
+    font-size: 70px;
+    color: #1B1A17;
+    text-decoration: none;
+}
+/*Barra de navegacion*/
+.navegacion {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F0A500;
+    border-top: solid #1B1A17;
+    border-width: 3px;
+}
+.navegacion--menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1B1A17;
+    display: inline-block;
+}
+
+.navegacion__elemento {
+    float: left;
+}
+
+.navegacion__link {
+    display: block;
+    color: #E45826;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navegacion__link--menu {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navegacion__link:hover {
+    background-color: #111;
+}
+
+.navegacion__link--menu:hover {
+    background-color: #dd8855;
+}
+/*Slider de fotos*/
+.contenedor{
+    margin: auto;
+    background-color: #333;
+    width: 800px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 2px;
+}
+
+.listas {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+.listas__elemento {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+.listas__imagen{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.listas__elemento:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+.listas__elemento:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.boton{
+    text-align: center;
+    margin: 20px;
+}
+
+.boton__elemento{
+    display: inline-block;
+    text-align: center;
+}
+
+.boton__nro{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+/*Logo restaurante*/
+
+.petralogo{/*Despues voy a buscar un logo o fondo que ocupe el ancho de la pagina*/
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+
+/*Descripcion Restaurante*/
+
+.descripcion{
+    display: block;
+    background-color: #333;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.descripcion__texto{
+    color: white;
+}
+
+.caracteristicas{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Menu*/
+.menu{
+    width: 80%;
+    background-color: #333;
+    border: dashed #dd8855;
+    border-width: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+.menu__logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu__nav{
+    text-align: center;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.comida{
+    margin: 12px;
+    list-style-type: none;
+}
+
+.comida__tipo{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #dd8855;
+    border: solid #dd8855;
+    font-family: anton;
+    letter-spacing: 2px;
+}
+
+.comida__nombre{
+    font-family: lobster;
+    color: #E45826;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+.comida__descripcion{
+    display: inline;
+    font-size: 20px;
+    color: white;
+    margin: 7px;
+    font-family: lobster;
+}
+
+.comida__imagen{
+    margin-left: 8px;
+}
+
+.reservar{
+    display: block;
+    background-color: #333;
+    border-radius: 10px;
+    color: #dd8855;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 300px;
+    text-align: center;
+    font-size: 60px;
+    font-family: anton;
+    letter-spacing: 2px;
+}
+
+.facebook{
+    float: right;
+    width: 112px;
+    height: 112px;
+    margin-top: 115px;
+}
+
+/*Estilos para el index*/
+
+.pages{
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    justify-items: center;
+}
+
+.pages__cercanos{
+    text-align: center;
+    border: solid #1B1A17;
+    border-radius: 20px;
+    color: #1B1A17;
+    background-color: #E6D5B8;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: anton;
+    letter-spacing: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.pages__cercanos__link{
+    text-decoration: none;
+    color: #E45826;
+}
+
+.pages__tipo{
+    text-align: center;
+    border: solid #1B1A17;
+    border-radius: 20px;
+    color: #E45826;
+    background-color: #E6D5B8;
+    text-decoration: none;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-family: anton;
+    padding-left: 8px;
+    padding-right: 8px;
+    letter-spacing: 2px;
+}
+
+.pages__tipo__opciones{
+    border: solid #1B1A17;
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    color: #E45826;
+    background-color: #E6D5B8;
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-family: anton;
+}
+
+.pages__nombre{
+    text-align: center;
+}
+
+.pages__buscar{
+    display: block;
+    text-align: center;
+    border: solid #E45826;
+    border-radius: 20px;
+    color: #1B1A17;
+    background-color: #F0A500;
+    text-decoration: none;
+    font-size: 70px;
+    margin-top: 50px;
+    font-family: anton;
+    letter-spacing: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.pages__lista{
+    text-align: left;
+    border: solid #1B1A17;
+    border-radius: 20px;
+    color: #E45826;
+    background-color: #E6D5B8;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 50px;
+    padding: 8px;
+}
+
+.pages__contacto{
+    text-align: right;
+    border: solid #1B1A17;
+    border-radius: 20px;
+    color: #E45826;
+    background-color: #E6D5B8;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 1530px;
+    padding: 8px;
+}
+
+.pages__footer{
+    display: flex;
+    margin-top: 100px;
+}
+.pages__span{
+    margin: 0;
+}
+
+/*Estilos para lista*/
+.locales{
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(11, auto);
+    background-color: #1B1A17;
+    border: dashed #F0A500;
+    border-width: 8px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 15%;
+}
+
+.comida__alt{
+    width: 225px;
+    height: 225px;
+}
+
+.visitar{
+    text-decoration: none;
+    color: #E45826;
+    background-color: #E6D5B8;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.nombre{
+    text-decoration: none;
+}
+
+/*Estilos pra contacto*/
+
+.menu--contacto{
+    width: 40%;
+    background-color: #333;
+    border: dashed #dd8855;
+    border-width: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.contacto__label{
+    color: #dd8855;
+    font-size: 40px;
+    font-family: anton;
+    letter-spacing: 2px;
+}
+
+.contacto__datos{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.contacto__mensaje{
+    color: #dd8855;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: anton;
+    letter-spacing: 2px;
+}
+
+.contacto__boton{
+    background-color: #dd8855;
+    color: #333;
+    border: #dd8855;
+    font-size: 20px;
+}
+
+.contacto__parrafo{
+    text-align: center;
+}
+
+/*Estilos para reservar.html*/
+
+.menu--reservar{
+    width: 50%;
+    background-color: #333;
+    border: dashed #dd8855;
+    border-width: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.reservar__titulo{
+    color: #dd8855;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: anton;
+    letter-spacing: 2px;
+}
+
+.reservar__input--fecha{
+    font-size: 20px;
+}
+
+.reservar__label{
+    color: white;
+    font-size: 20px;
+}
+
+.reserva{
+    text-align: center;
+    color: #dd8855;
+    font-size: 40px;
+    border-bottom: solid #dd8855;
+    font-family: anton;
+    letter-spacing: 2px;
+}

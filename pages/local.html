@@ -1,99 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
-  <header>
-      <h1>ReservaOnline</h1>
-      <h2>Pettra</h2>
-  </header>
+<body class="local">
+    <header class="header">
+        <a class="nombre" href="../index.html">
+            <h1 class="reservaonline">ReservaOnline</h1>
+        </a>
 
-  <section>
-      <div>
+        <nav>
+            <ul class="navegacion">
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link" href="../index.html">Inicio</a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link"  href="https://goo.gl/maps/Tqo8Wybzqh3nLFT19" target="_blanck">Cercanos a mi</a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link"  href="../pages/lista.html">Locales</a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link"  href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <img class="petralogo" src="../assets/Logos/Petra logo.jpg" alt="petralogo">
+    </header>
 
-          <ul>
-              <li id="slide1">
-              <img src="../assets/Images/Pettra1.jpg" alt="pettraportada1" width="30%" height="30%"/>
-              </li>
-              <li id="slide2">
-              <img src="../assets/Images/Pettra2.jpg" alt="pettraportada1" width="30%" height="30%"/>
-              </li>
-              <li id="slide3">
-              <img src="../assets/Images/Pettra3.jpg" alt="pettraportada1" width="30%" height="30%"/>
-              </li>
-          </ul>
-          
-          <ul>
-              <li>
-              <a href="#slide1">1</a>
-              </li>
-              <li>
-              <a href="#slide2">2</a>
-              </li>
-              <li>
-              <a href="#slide3">3</a>
-              </li>
-          </ul>
-          
-          </div>
-  </section>
+    <section> <!--Slide de fotos-->
+        <div class="contenedor">
 
-  <h3>Menú</h3>
-  <section>
-      <nav>
-          <ul>
-              <li> <a href="#comidarapida">Comida Rapida</a> </li>
-              <li> <a href="#bebidas">Bebidas</a> </li>
-              <li> <a href="#postres">Postres</a></li>
-          </ul>
-      </nav>
+            <ul class="listas">
+                <li id="slide1" class="listas__elemento">
+                <img class="listas__imagen" src="../assets/Images/Pettra1.jpg" alt="pettraportada1"/>
+                </li>
+                <li id="slide2" class="listas__elemento">
+                <img class="listas__imagen"  src="../assets/Images/Pettra2.jpg" alt="pettraportada1"/>
+                </li>
+                <li id="slide3" class="listas__elemento">
+                <img class="listas__imagen"  src="../assets/Images/Pettra3.jpg" alt="pettraportada1"/>
+                </li>
+            </ul>
+            
+            <ul class="boton"><!--Cada vez que presiono un boton, el display se ubica en la foto-->
+                <li class="boton__elemento">
+                <a class="boton__nro" href="#slide1" tabindex="">1</a>
+                </li>
+                <li class="boton__elemento">
+                <a class="boton__nro"  href="#slide2" tabindex="">2</a>
+                </li>
+                <li class="boton__elemento">
+                <a class="boton__nro"  href="#slide3" tabindex="">3</a>
+                </li>
+            </ul>
+            
+            </div>
+    </section>
+    <section class="descripcion">
+        <h4 class="descripcion__texto">
+            El restaurante San rafaelino no solo cambia su menú por estaciones, sino que muda contexto, fachada, paisaje y look en tres temporadas al año. Pettra es un espacio de alta cocina con un modelo creativo a seguir, pero también un lugar del que el comensal no quiere marcharse una vez que logra sentarse en sus demandadas mesas. Así es Pettra por dentro, la organización de su equipo y su sistema de trabajo, su modelo creativo, la experiencia del cliente a través de su menú del pasado verano (‘Summer Season’ 2021) y un repaso a la historia del negocio de René Redzepi, con su capacidad para agitar Mendoza y convertir la ciudad en un epicentro gastronómico global. Posicionado 4 años como mejor restaurante del mundo en la lista ‘The World’s 50 Best Restaurants’ y con opciones de convertirse en líder en 2021, Pettra recibió hace unos días contra todo pronóstico la tercera estrella Michelin.
 
-      <ul id="comidarapida">
-          <li>
-              <h3>Pancho</h3>
-              <img src="../assets/Images/Pancho.jpg" alt="pancho">
-              <h5>Pan, Salchica, Aderezo, Salsa a elección</h5>
-          </li>
-          <li>
-              <h3>Hamburguesa</h3>
-              <img src="../assets/Images/Hamburguesa.jpg" alt="hamburguesa">
-              <h5>Pan, medallon de carne, Aderezo, Salsa a elección, Tomate y lechuga, Huevo, sale con porcion de papas fritas </h5>
-          </li>
-      </ul>
-      <ul id="bebidas">
-          <li>
-              <h3>Cerveza</h3>
-              <img src="../assets/Images/cerveza.jpg" alt="cerveza">
-              <h5>Cerveza artesanal rubia de amargura media</h5>
-          </li>
-          <li>
-              <h3>Vino</h3>
-              <img src="../assets/Images/vino.jpg" alt="vino">
-              <h5>Vino tinto producido en la mejor bodega mendocina</h5>
-          </li>
-      </ul>
-      <ul id="postres">
-          <li>
-              <h3>Lemon Pie</h3>
-              <img src="../assets/Images/lemonpie.jpg" alt="lemonpie">
-              <h5>Postre clasico con la combinacion perfecta de dulzura y acides</h5>
-          </li>
-          <li>
-              <h3>Torta de cholotae</h3>
-              <img src="../assets/Images/tortachocolate.jpg" alt="tortachocolate">
-              <h5>La mejor opcion para los amantes de lo dulce</h5>
-          </li>
-      </ul>
-  </section>
+        </h4>
+        <ul class="caracteristicas">
+            <li>CAPACIDAD: 150 personas</li>
+            <li>AMBIENTES: Planta baja, planta alta, terraza y patio</li>
+            <li>TIPO DE COMIDA: Churrasquería, Argentina, Internacional</li>
+            <li>DIETAS ESPECIALES: Apto para vegetarianos, Opciones veganas, Opciones sin gluten</li>
+            <li>HORARIOS DE ATENCION: 09:00 HASTA 2:00</li>
+        </ul>
+    </section>
+    
+    <section class="menu">
+        <img class="menu__logo" src="../assets/Logos/Menu.png" alt="menulogo">
+        <nav class="menu__nav">
+            <ul class="navegacion--menu">
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#comidarapida">Comida Rapida</a> </li>
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#bebidas">Bebidas</a> </li>
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#postres">Postres</a></li>
+            </ul>
+        </nav>
 
-    <a href="../pages/reservar.html"><h2>Reservar</h2></a>
+        <ul class="comida" id="comidarapida">
+            <h3 class="comida__tipo">Comida Rapida</h3>
+            <li>
+                <h3 class="comida__nombre">Pancho</h3>
+                <img class="comida__imagen" src="../assets/Images/Pancho.jpg" alt="pancho">
+                <h5 class="comida__descripcion">Pan, Salchica, Aderezo, Salsa a elección</h5>
+            </li>
+            <li>
+                <h3 class="comida__nombre">Hamburguesa</h3>
+                <img class="comida__imagen" src="../assets/Images/Hamburguesa.jpg" alt="hamburguesa">
+                <h5 class="comida__descripcion">Pan, medallon de carne, Aderezo, Salsa a elección, Tomate y lechuga, Huevo, sale con porcion de papas fritas </h5>
+            </li>
+        </ul>
+        <ul class="comida" id="bebidas">
+            <h3 class="comida__tipo">Bebidas</h3>
+            <li>
+                <h3 class="comida__nombre">Cerveza</h3>
+                <img class="comida__imagen" src="../assets/Images/cerveza.jpg" alt="cerveza">
+                <h5 class="comida__descripcion">Cerveza artesanal rubia de amargura media</h5>
+            </li>
+            <li>
+                <h3 class="comida__nombre">Vino</h3>
+                <img class="comida__imagen" src="../assets/Images/vino.jpg" alt="vino">
+                <h5 class="comida__descripcion">Vino tinto producido en la mejor bodega mendocina</h5>
+            </li>
+        </ul>
+        <ul class="comida" id="postres">
+            <h3 class="comida__tipo">Postres</h3>
+            <li>
+                <h3 class="comida__nombre">Lemon Pie</h3>
+                <img class="comida__imagen" src="../assets/Images/lemonpie.jpg" alt="lemonpie">
+                <h5 class="comida__descripcion">Postre clasico con la combinacion perfecta de dulzura y acides</h5>
+            </li>
+            <li>
+                <h3 class="comida__nombre">Torta de cholotae</h3>
+                <img class="comida__imagen" src="../assets/Images/tortachocolate.jpg" alt="tortachocolate">
+                <h5 class="comida__descripcion">La mejor opcion para los amantes de lo dulce</h5>
+            </li>
+        </ul>
+    </section>
+
+    <a class="reservar" href="../pages/reservar.html">Reservar</a>
 
     <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8154319499777!2d-68.35309128447511!3d-34.60882838045806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96790813edce7661%3A0x74ccad8d212d5a8e!2sPettra%20Resto!5e0!3m2!1ses-419!2sar!4v1647034223456!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8154319499777!2d-68.35309128447511!3d-34.60882838045806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96790813edce7661%3A0x74ccad8d212d5a8e!2sPettra%20Resto!5e0!3m2!1ses-419!2sar!4v1647034223456!5m2!1ses-419!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <a href="https://www.facebook.com/pettra.resto/">
+            <img class="facebook" src="../assets/Logos/facebook-600.png" alt="facebooklogo">
+        </a>
     </footer>
 
 </body>

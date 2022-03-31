@@ -1,47 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
-    <header>
-        <h1>ReservaOnline</h1>
-        <h2>Contacto</h2>
+<body class="local">
+    <header class="header">
+        <a class="nombre" href="../index.html">
+            <h1 class="reservaonline">ReservaOnline</h1>
+        </a>
+
+        <nav>
+            <ul class="navegacion">
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link" href="../index.html">Inicio</a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link"  href="https://goo.gl/maps/Tqo8Wybzqh3nLFT19" target="_blanck">Cercanos a mi</a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link"  href="../pages/lista.html">Locales</a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__link"  href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <form action="procesar.php" method="post">
+    <form class="menu--contacto" action="procesar.php" method="post">
 
-        <fieldset>
+        <fieldset class="contacto">
         <p>
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+        <label class="contacto__label" for="nombre">Nombre</label>
+        <input class="contacto__datos" type="text" name="nombre" placeholder="Ingresa tu nombre">
         </p>
 
         <p>
-        <label for="apellido">Apellido</label>
-        <input type="text" name="apellido" placeholder="Ingresa tu apellido">
+        <label class="contacto__label" for="apellido">Apellido</label>
+        <input class="contacto__datos" type="text" name="apellido" placeholder="Ingresa tu apellido">
         </p>
 
         <p>
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Ingresa tu email">
+            <label class="contacto__label" for="email">Email</label>
+            <input class="contacto__datos" type="email" name="email" placeholder="Ingresa tu email">
         </p>
 
         <p>
-            <label for="tel">Telefono</label>
-            <input type="tel" name="tel" placeholder="Ingresa tu telefono">
+            <label class="contacto__label" for="tel">Telefono</label>
+            <input class="contacto__datos" type="tel" name="tel" placeholder="Ingresa tu telefono">
         </p>
 
-        <h4>Dejame tu mensaje</h4>
+        <h4 class="contacto__mensaje">Dejame tu mensaje</h4>
 
-        <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+        <textarea name="mensaje" id="" cols="100" rows="10"></textarea>
 
-        <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar formulario">
-        <input type="button" value="Sin acciones">
+        <p class="contacto__parrafo">
+        <input class="contacto__boton" type="submit" value="Enviar">
+        <input class="contacto__boton" type="reset" value="Borrar">
         </p>
         </fieldset>
 </body>
