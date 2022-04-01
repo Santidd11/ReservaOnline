@@ -1,7 +1,4 @@
-@font-face {
-    font-family: "berolina";
-    src: url(../fonts/Berolina.ttf);
-}
+
 @font-face {
     font-family: "mosk";
     src: url(../fonts/Mosk\ Ultra-Bold\ 900.ttf);
@@ -17,24 +14,15 @@
     src: url(../fonts/Lobster-Regular.ttf);
 }
 
-@font-face {
-    font-family: "bungee";
-    src: url(../fonts/Bungee-Regular.ttf);
-}
-
-@font-face {
-    font-family: "pacifico";
-    src: url(../fonts/Pacifico-Regular.ttf);
-}
-
-@font-face {
-    font-family: "alfa";
-    src: url(../fonts/AlfaSlabOne-Regular.ttf);
-}
 
 html{
     scroll-behavior: smooth;
 }
+
+/*Full responsive*/
+
+@media (min-width: 300px) and (max-width: 658px)
+
 
 .local{
     background-image: url(../assets/Images/fondo.png);
