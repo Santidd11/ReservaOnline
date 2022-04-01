@@ -7,7 +7,7 @@
     <title>Local</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body class="local">
+<body class="cuerpoLocal">
     <header class="header">
         <a class="nombre" href="../index.html">
             <h1 class="reservaonline">ReservaOnline</h1>
@@ -29,50 +29,51 @@
                 </li>
             </ul>
         </nav>
-        <img class="petralogo" src="../assets/Logos/Petra logo.jpg" alt="petralogo">
     </header>
+    <section class="inicio">
+        <img class="petralogo" src="../assets/Logos/Petra logo.jpg" alt="petralogo">
+        <section> <!--Slide de fotos-->
+            <div class="contenedor">
 
-    <section> <!--Slide de fotos-->
-        <div class="contenedor">
+                <ul class="listas">
+                    <li id="slide1" class="listas__elemento">
+                    <img class="listas__imagen" src="../assets/Images/Pettra1.jpg" alt="pettraportada1"/>
+                    </li>
+                    <li id="slide2" class="listas__elemento">
+                    <img class="listas__imagen"  src="../assets/Images/Pettra2.jpg" alt="pettraportada1"/>
+                    </li>
+                    <li id="slide3" class="listas__elemento">
+                    <img class="listas__imagen"  src="../assets/Images/Pettra3.jpg" alt="pettraportada1"/>
+                    </li>
+                </ul>
+                
+                <ul class="boton"><!--Cada vez que presiono un boton, el display se ubica en la foto-->
+                    <li class="boton__elemento">
+                    <a class="boton__nro" href="#slide1" tabindex="">1</a>
+                    </li>
+                    <li class="boton__elemento">
+                    <a class="boton__nro"  href="#slide2" tabindex="">2</a>
+                    </li>
+                    <li class="boton__elemento">
+                    <a class="boton__nro"  href="#slide3" tabindex="">3</a>
+                    </li>
+                </ul>
+                
+                </div>
+        </section>
+        <section class="descripcion">
+            <h4 class="descripcion__texto">
+                El restaurante San rafaelino no solo cambia su menú por estaciones, sino que muda contexto, fachada, paisaje y look en tres temporadas al año. Pettra es un espacio de alta cocina con un modelo creativo a seguir, pero también un lugar del que el comensal no quiere marcharse una vez que logra sentarse en sus demandadas mesas. Así es Pettra por dentro, la organización de su equipo y su sistema de trabajo, su modelo creativo, la experiencia del cliente a través de su menú del pasado verano (‘Summer Season’ 2021) y un repaso a la historia del negocio de René Redzepi, con su capacidad para agitar Mendoza y convertir la ciudad en un epicentro gastronómico global. Posicionado 4 años como mejor restaurante del mundo en la lista ‘The World’s 50 Best Restaurants’ y con opciones de convertirse en líder en 2021, Pettra recibió hace unos días contra todo pronóstico la tercera estrella Michelin.
 
-            <ul class="listas">
-                <li id="slide1" class="listas__elemento">
-                <img class="listas__imagen" src="../assets/Images/Pettra1.jpg" alt="pettraportada1"/>
-                </li>
-                <li id="slide2" class="listas__elemento">
-                <img class="listas__imagen"  src="../assets/Images/Pettra2.jpg" alt="pettraportada1"/>
-                </li>
-                <li id="slide3" class="listas__elemento">
-                <img class="listas__imagen"  src="../assets/Images/Pettra3.jpg" alt="pettraportada1"/>
-                </li>
+            </h4>
+            <ul class="caracteristicas">
+                <li>CAPACIDAD: 150 personas</li>
+                <li>AMBIENTES: Planta baja, planta alta, terraza y patio</li>
+                <li>TIPO DE COMIDA: Churrasquería, Argentina, Internacional</li>
+                <li>DIETAS ESPECIALES: Apto para vegetarianos, Opciones veganas, Opciones sin gluten</li>
+                <li>HORARIOS DE ATENCION: 09:00 HASTA 2:00</li>
             </ul>
-            
-            <ul class="boton"><!--Cada vez que presiono un boton, el display se ubica en la foto-->
-                <li class="boton__elemento">
-                <a class="boton__nro" href="#slide1" tabindex="">1</a>
-                </li>
-                <li class="boton__elemento">
-                <a class="boton__nro"  href="#slide2" tabindex="">2</a>
-                </li>
-                <li class="boton__elemento">
-                <a class="boton__nro"  href="#slide3" tabindex="">3</a>
-                </li>
-            </ul>
-            
-            </div>
-    </section>
-    <section class="descripcion">
-        <h4 class="descripcion__texto">
-            El restaurante San rafaelino no solo cambia su menú por estaciones, sino que muda contexto, fachada, paisaje y look en tres temporadas al año. Pettra es un espacio de alta cocina con un modelo creativo a seguir, pero también un lugar del que el comensal no quiere marcharse una vez que logra sentarse en sus demandadas mesas. Así es Pettra por dentro, la organización de su equipo y su sistema de trabajo, su modelo creativo, la experiencia del cliente a través de su menú del pasado verano (‘Summer Season’ 2021) y un repaso a la historia del negocio de René Redzepi, con su capacidad para agitar Mendoza y convertir la ciudad en un epicentro gastronómico global. Posicionado 4 años como mejor restaurante del mundo en la lista ‘The World’s 50 Best Restaurants’ y con opciones de convertirse en líder en 2021, Pettra recibió hace unos días contra todo pronóstico la tercera estrella Michelin.
-
-        </h4>
-        <ul class="caracteristicas">
-            <li>CAPACIDAD: 150 personas</li>
-            <li>AMBIENTES: Planta baja, planta alta, terraza y patio</li>
-            <li>TIPO DE COMIDA: Churrasquería, Argentina, Internacional</li>
-            <li>DIETAS ESPECIALES: Apto para vegetarianos, Opciones veganas, Opciones sin gluten</li>
-            <li>HORARIOS DE ATENCION: 09:00 HASTA 2:00</li>
-        </ul>
+        </section>
     </section>
     
     <section class="menu">
@@ -124,11 +125,13 @@
                 <h5 class="comida__descripcion">La mejor opcion para los amantes de lo dulce</h5>
             </li>
         </ul>
+        <a class="reservar" href="../pages/reservar.html">Reservar</a>
     </section>
 
-    <a class="reservar" href="../pages/reservar.html">Reservar</a>
 
-    <footer>
+
+    <footer class="piedepagina">
+
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8154319499777!2d-68.35309128447511!3d-34.60882838045806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96790813edce7661%3A0x74ccad8d212d5a8e!2sPettra%20Resto!5e0!3m2!1ses-419!2sar!4v1647034223456!5m2!1ses-419!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <a href="https://www.facebook.com/pettra.resto/">
             <img class="facebook" src="../assets/Logos/facebook-600.png" alt="facebooklogo">

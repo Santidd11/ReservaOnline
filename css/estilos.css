@@ -24,8 +24,58 @@ html{
 @media (min-width: 300px) and (max-width: 658px)
 
 
-.local{
+cuerpo{
     background-image: url(../assets/Images/fondo.png);
+    display: grid;
+    back
+}
+
+
+.cuerpoIndex{
+    background-image: url(../assets/Images/fondo.png);
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "pages"
+    "piedepagina";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+}
+
+.cuerpoLista{
+    background-image: url(../assets/Images/fondo.png);
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "navegacion"
+    "locales";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+}
+
+.cuerpoLocal{
+    background-image: url(../assets/Images/fondo.png);
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "inicio"
+    "menu"
+    "piedepagina"
+    ;
+}
+
+.header{
+    grid-area: header;
+}
+
+.piedepagina{
+    grid-area: piedepagina;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inicio{
+    grid-area: inicio;
 }
 
 .reservaonline{
@@ -46,6 +96,8 @@ html{
     background-color: #F0A500;
     border-top: solid #1B1A17;
     border-width: 3px;
+    display: flex;
+    justify-content: flex-start;
 }
 .navegacion--menu {
     list-style-type: none;
@@ -192,6 +244,7 @@ html{
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
+    grid-area: menu;
 }
 .menu__logo{
     display: block;
@@ -205,6 +258,7 @@ html{
     margin-top: 25px;
     margin-right: auto;
     margin-bottom: 0px;
+    grid-area: navegacion;
 }
 
 .comida{
@@ -273,6 +327,7 @@ html{
     grid-template-columns: 100%;
     grid-template-rows: repeat(5, auto);
     justify-items: center;
+    grid-area: pages;
 }
 
 .pages__cercanos{
@@ -343,37 +398,32 @@ html{
 }
 
 .pages__lista{
-    text-align: left;
     border: solid #1B1A17;
     border-radius: 20px;
     color: #E45826;
     background-color: #E6D5B8;
     text-decoration: none;
     font-size: 30px;
-    margin-top: 50px;
     padding: 8px;
+    align-self: flex-start;
 }
 
 .pages__contacto{
-    text-align: right;
     border: solid #1B1A17;
     border-radius: 20px;
     color: #E45826;
     background-color: #E6D5B8;
     text-decoration: none;
     font-size: 30px;
-    margin-top: 50px;
-    margin-left: 1530px;
     padding: 8px;
+    align-self: flex-end;
 }
 
 .pages__footer{
     display: flex;
     margin-top: 100px;
 }
-.pages__span{
-    margin: 0;
-}
+
 
 /*Estilos para lista*/
 .locales{
@@ -388,6 +438,7 @@ html{
     justify-items: center;
     align-items: center;
     margin-left: 15%;
+    grid-area: locales;
 }
 
 .comida__alt{
