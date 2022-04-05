@@ -7,7 +7,7 @@
     <title>Reservar</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body class="local">
+<body class="cuerpoReservar">
     <header class="header">
         <a class="nombre" href="../index.html">
             <h1 class="reservaonline">ReservaOnline</h1>
@@ -48,12 +48,13 @@
             <h3 class="reservar__titulo">Cantidad de personas</h3>
             <label class="reservar__label" for="personas">Cantidad de adultos (1-12):</label>
             <input type="number" name="personas" min="1" max="12">
+            <div></div>
             <label class="reservar__label" for="personas">Cantidad de niños (0-12):</label>
             <input type="number" name="personas" min="0" max="12">
         </section>
         <section>
             <h3 class="reservar__titulo">Selección del menú</h3>
-                <textarea name="mensaje" id="" cols="130" rows="10"></textarea>
+                <textarea name="mensaje" class="textarea" id=""></textarea>
         </section>
         <section>
             <h3 class="reservar__titulo">Datos de quien reserva</h3>

@@ -1,4 +1,5 @@
 
+
 @font-face {
     font-family: "mosk";
     src: url(../fonts/Mosk\ Ultra-Bold\ 900.ttf);
@@ -19,16 +20,12 @@ html{
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+}
 /*Full responsive*/
 
-@media (min-width: 300px) and (max-width: 658px)
 
-
-cuerpo{
-    background-image: url(../assets/Images/fondo.png);
-    display: grid;
-    back
-}
 
 
 .cuerpoIndex{
@@ -62,6 +59,16 @@ cuerpo{
     "menu"
     "piedepagina"
     ;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+}
+
+.cuerpoReservar{
+    background-image: url(../assets/Images/fondo.png);
+}
+
+.cuerpoContacto{
+    background-image: url(../assets/Images/fondo.png);
 }
 
 .header{
@@ -204,11 +211,13 @@ cuerpo{
 /*Logo restaurante*/
 
 .petralogo{/*Despues voy a buscar un logo o fondo que ocupe el ancho de la pagina*/
+    display: flex;
+    justify-content: center;
+}
+
+.petralogo__img{
     width: 20%;
     height: 20%;
-    text-align: center;
-    display: block;
-    margin: 0px auto;
 }
 
 /*Descripcion Restaurante*/
@@ -247,7 +256,7 @@ cuerpo{
     grid-area: menu;
 }
 .menu__logo{
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
@@ -318,11 +327,16 @@ cuerpo{
     margin-top: 115px;
 }
 
+.mapa{
+    width: 300px;
+    height: 225px;
+}
+
 /*Estilos para el index*/
 
 .pages{
     width: 100%;
-    height: 700px;
+    height: auto;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(5, auto);
@@ -342,6 +356,7 @@ cuerpo{
     letter-spacing: 2px;
     padding-left: 8px;
     padding-right: 8px;
+    width: auto;
 }
 
 .pages__cercanos__link{
@@ -362,13 +377,14 @@ cuerpo{
     padding-left: 8px;
     padding-right: 8px;
     letter-spacing: 2px;
+    width: 287.3px;
 }
 
 .pages__tipo__opciones{
     border: solid #1B1A17;
     border-radius: 20px;
     height: auto;
-    width: auto;
+    width: 300px;
     color: #E45826;
     background-color: #E6D5B8;
     text-decoration: none;
@@ -390,7 +406,8 @@ cuerpo{
     background-color: #F0A500;
     text-decoration: none;
     font-size: 70px;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: anton;
     letter-spacing: 2px;
     padding-left: 8px;
@@ -446,14 +463,6 @@ cuerpo{
     height: 225px;
 }
 
-.visitar{
-    text-decoration: none;
-    color: #E45826;
-    background-color: #E6D5B8;
-    border-radius: 10px;
-    padding: 5px;
-}
-
 .nombre{
     text-decoration: none;
 }
@@ -461,13 +470,15 @@ cuerpo{
 /*Estilos pra contacto*/
 
 .menu--contacto{
-    width: 40%;
+    width: 780px;
     background-color: #333;
     border: dashed #dd8855;
     border-width: 8px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .contacto__label{
@@ -512,6 +523,8 @@ cuerpo{
     margin-right: auto;
     margin-top: 15px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .reservar__titulo{
@@ -520,6 +533,11 @@ cuerpo{
     margin-bottom: 10px;
     font-family: anton;
     letter-spacing: 2px;
+}
+
+.textarea{
+    width: 90%;
+    height: 70px;
 }
 
 .reservar__input--fecha{
@@ -538,4 +556,193 @@ cuerpo{
     border-bottom: solid #dd8855;
     font-family: anton;
     letter-spacing: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .reservaonline{
+        font-size: 35px;
+    }
+    .navegacion__link{
+        font-family: mosk;
+        font-size: 60%;
+        color: #1B1A17;
+    }
+    /*Index Responsive*/
+    .pages__cercanos{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .pages__tipo{
+        font-size: 25px;
+        width: 212px;
+        margin-bottom: 0px;
+    }
+    .pages__tipo__opciones{
+        font-size: 25px;
+    }
+    .pages__nombre{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .pages__buscar{
+        font-size: 30px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .pages__div{
+        height: auto;
+        margin-bottom: 0px;
+    }
+    .pages{
+        height: auto;
+    }
+    .pages__lista{
+        font-size: 20px;
+        padding: 4px;
+    }
+    .pages__contacto{
+        font-size: 20px;
+        padding: 4px;
+    }
+
+    /*Lista responsive*/
+    .locales{
+        width: 100%;
+        border: none;
+        margin: 0px;
+        grid-template-columns: 150px auto;
+    }
+    .navegacion__link--menu{
+        padding: 4px;
+        border: #E45826;
+        border-width: 1px;
+    }
+    .menu__nav{
+        width: 100%;
+    }
+    .navegacion--menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .comida__nombre{
+        font-size: 25px;
+    }
+    .comida__descripcion{
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .comida__alt{
+        width: 100px;
+        height: 100px;
+    }
+    .comida__imagen{
+        width: 100px;
+        height: 100px;
+    }
+
+
+}
+
+@media screen and (max-width: 880px) {
+    .reservaonline{
+        font-size: 35px;
+    }
+    .navegacion__link{
+        font-family: mosk;
+        font-size: 60%;
+        color: #1B1A17;
+    }
+        /*Local responsive*/
+
+        .contenedor{
+            display: none;
+        }
+        .descripcion{
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 95%;
+        }
+        .menu{
+            width: 95%;
+            border: none;
+        }
+        .menu__imagen{
+            display: flex;
+            justify-content: center;
+            height: auto;
+            width: auto;
+        }
+        .menu__logo{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+        .contenedor{
+            display: flex;
+            justify-content: center;
+            height: auto;
+            width: auto;
+            padding: 0px;
+        }
+        
+        .listas {
+            position: relative;
+        }
+        
+        .listas__elemento {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .listas__imagen{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .boton{
+            display: none;
+        }
+        .comida{
+            padding-left: 0px;
+        }
+        .mapa{
+            width: 100px;
+            height: 100px;
+        }
+        .reservar{
+            font-size: 35px;
+            padding: 0px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+        .facebook{
+            margin-top: 0px;
+        }
+
+            /*Reservar responsive*/
+
+        .menu--reservar{
+            width: 90%;
+            border-width: 0px;
+            margin-right: 10px;
+        }
+
+        /*Contacto Responsive*/
+
+        .menu--contacto{
+            width: 98%;
+            border-width: 0px;
+        }
+        .contacto__label{
+            font-size: 25px;
+        }
+        .contacto__datos{
+            font-size: 12px;
+        }
+        .contacto__mensaje{
+            font-size: 30px;
+        }
 }

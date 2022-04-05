@@ -7,7 +7,7 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body class="local">
+<body class="cuerpoContacto">
     <header class="header">
         <a class="nombre" href="../index.html">
             <h1 class="reservaonline">ReservaOnline</h1>
@@ -33,34 +33,34 @@
     <form class="menu--contacto" action="procesar.php" method="post">
 
         <fieldset class="contacto">
-        <p>
+        <div>
         <label class="contacto__label" for="nombre">Nombre</label>
         <input class="contacto__datos" type="text" name="nombre" placeholder="Ingresa tu nombre">
-        </p>
+        </div>
 
-        <p>
+        <div>
         <label class="contacto__label" for="apellido">Apellido</label>
         <input class="contacto__datos" type="text" name="apellido" placeholder="Ingresa tu apellido">
-        </p>
+        </div>
 
-        <p>
+        <div>
             <label class="contacto__label" for="email">Email</label>
             <input class="contacto__datos" type="email" name="email" placeholder="Ingresa tu email">
-        </p>
+        </div>
 
-        <p>
+        <div>
             <label class="contacto__label" for="tel">Telefono</label>
             <input class="contacto__datos" type="tel" name="tel" placeholder="Ingresa tu telefono">
-        </p>
+        </div>
 
         <h4 class="contacto__mensaje">Dejame tu mensaje</h4>
 
-        <textarea name="mensaje" id="" cols="100" rows="10"></textarea>
+        <textarea name="mensaje" class="textarea" id=""></textarea>
 
-        <p class="contacto__parrafo">
+        <div class="contacto__parrafo">
         <input class="contacto__boton" type="submit" value="Enviar">
         <input class="contacto__boton" type="reset" value="Borrar">
-        </p>
+        </div>
         </fieldset>
 </body>
 </html>

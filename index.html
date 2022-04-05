@@ -33,15 +33,15 @@
 
     <section class="pages">
         <!--Seccion que contiene todos los "botones" del index-->
-        <div>
+        <div class="pages__div">
             <h3 class="pages__cercanos">
                 <a class="pages__cercanos__link" href="https://goo.gl/maps/Tqo8Wybzqh3nLFT19" target="_blanck">Cercanos a mi</a> 
                 <!--Nos dirige a una nueva ventana de google maps-->
             </h3>
         </div>
-        <div>
-            <label for="tipos" class="pages__tipo">Tipo de Local:</label>
+        <div class="pages__div">
             <select name="tipos" class="pages__tipo">
+                <option value="1" disabled selected>Tipo de local</option>
                 <option value="buffet">Buffet</option>
                 <option value="gourmet">Gourmet</option>
                 <option value="familiar">Familiar</option>
@@ -50,13 +50,13 @@
                 <!--Podemos elegir el tipo de buffet que andamos buscando-->
             </select>
         </div>
-        <div>
+        <div class="pages__div">
             <p class="pages__nombre">
                 <input class="pages__cercanos" type="text" name="nombre" placeholder="Buscar por nombre">
                 <!--Buscamos el local por su nombre, por ej "Pettra"-->
             </p>
         </div>
-        <div>
+        <div class="pages__div">
             <a class="pages__buscar" href="./pages/lista.html">Buscar local</a>
             <!--Este boton deberia filtrar los resultados de los formularios anteriores pero por ahora solo nos lleva a la lista completa de locales-->
         </div>
