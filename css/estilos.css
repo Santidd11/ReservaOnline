@@ -133,6 +133,11 @@ a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition:all .5s ease-in-out;
+}
+
+.navegacion__link--menu:hover{
+    color: #1B1A17;
 }
 
 .navegacion__link:hover {
@@ -284,6 +289,7 @@ a{
     border: solid #F0A500;
     font-family: anton;
     letter-spacing: 2px;
+    background-color: #1B1A17;
 }
 
 .comida__nombre{
@@ -291,8 +297,14 @@ a{
     color: #E45826;
     margin-top: 35px;
     margin-bottom: 5px;
+    text-decoration: none;
     transition:all .5s ease-in-out;
 }
+
+.comida__link{
+    text-decoration: none;
+}
+
 .comida__nombre:hover{
     -webkit-transform:scale(1.3);
     transform:scale(1.2);
@@ -382,10 +394,16 @@ a{
     padding-left: 8px;
     padding-right: 8px;
     width: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .pages__cercanos__link{
     text-decoration: none;
+    color: #E45826;
+}
+
+.pages__cercanos__link:hover{
     color: #E45826;
 }
 
@@ -439,6 +457,10 @@ a{
     padding-right: 8px;
 }
 
+.pages__buscar:hover{
+    color: #1B1A17;
+}
+
 .pages__lista{
     border: solid #1B1A17;
     border-radius: 20px;
@@ -450,6 +472,10 @@ a{
     align-self: flex-start;
 }
 
+.pages__lista:hover{
+    color: #E45826;
+}
+
 .pages__contacto{
     border: solid #1B1A17;
     border-radius: 20px;
@@ -459,6 +485,10 @@ a{
     font-size: 30px;
     padding: 8px;
     align-self: flex-end;
+}
+
+.pages__contacto:hover{
+    color: #E45826;
 }
 
 .pages__footer{
@@ -586,6 +616,37 @@ a{
     border-bottom: solid #dd8855;
     font-family: anton;
     letter-spacing: 2px;
+}
+
+.tipo__comida{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    0% {
+    margin-left: 100%;
+    width: 300%
+}
+
+    100% {
+    margin-left: 0%;
+    width: 100%;
+    }
+}
+
+.cartas{
+    animation-duration: 3s;
+    animation-name: slideout;
+}
+
+@keyframes slideout {
+    0% {
+    translate: -3000px;
+}
+
+    100% {
+    translate: 0px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -728,10 +789,16 @@ a{
         }
         
         .listas__imagen{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            padding-left: 40px;
+            padding-right: 40px;
         }
+
+        .navbar-center {
+            position: absolute;
+            left: 50%;
+            transform: translatex(-50%);
+        }
+
         .boton{
             display: none;
         }
@@ -775,4 +842,9 @@ a{
         .contacto__mensaje{
             font-size: 30px;
         }
+}
+
+
+.comida__tipo--alt{
+    background-color: #1B1A17;
 }

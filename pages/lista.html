@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Locales</title>
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../libs/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/bootstrap-5.1.3-dist/js/bootstrap.min.js">
 </head>
 <body class="cuerpoLista">
     <header class="header">
@@ -13,99 +15,184 @@
             <h1 class="reservaonline">ReservasOnline</h1>
         </a>
 
-        <nav>
-            <ul class="navegacion">
-                <li class="navegacion__elemento">
-                    <a class="navegacion__link" href="../index.html">Inicio</a>
-                </li>
-                <li class="navegacion__elemento">
-                    <a class="navegacion__link"  href="https://goo.gl/maps/Tqo8Wybzqh3nLFT19" target="_blanck">Cercanos a mi</a>
-                </li>
-                <li class="navegacion__elemento">
-                    <a class="navegacion__link"  href="../pages/lista.html">Locales</a>
-                </li>
-                <li class="navegacion__elemento">
-                    <a class="navegacion__link"  href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navegacion">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="https://goo.gl/maps/Tqo8Wybzqh3nLFT19" target="_blanck">Cercanos a mi</a>
+                    <a class="nav-link active" href="../pages/lista.html">Locales</a>
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </div>
+                </div>
+            </div>
+            </nav>
     </header>
-    <nav class="menu__nav">
+    <nav class="menu__nav navbar nav justify-content-center container-fluid">
             <ul class="navegacion--menu">
-                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#pettra">Buffet</a> </li>
-                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#meet">Gourmet</a> </li>
-                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#la25">Familiar</a></li>
-                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#mcdonalds">Comida rapida</a> </li>
-                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#uptown">Bar</a> </li>
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#buffet">Buffet</a> </li>
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#gourmet">Gourmet</a> </li>
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#familiar">Familiar</a></li>
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#rapida">Comida rapida</a> </li>
+                <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#bar">Bar</a> </li>
             </ul>
     </nav>
-    <section class="locales">
-        <div class="comida" id="pettra">
-            <a href="../pages/local.html"><h3 class="comida__nombre">Pettra</h3></a>    
+
+    <p class="display-1 text-center tipo__comida" id="buffet"><strong>Buffet</strong></p>
+    <div class="card-group container-fluid container-sm my-4 cartas">
+        <div class="row">
+            <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                <img src="../assets/Logos/Petra logo.jpg" class="card-img-top img-fluid img-thumbnail" alt="pettralogo">
+                <div class="card-body">
+                <h5 class="card-title">Pettra</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et assumenda quasi laboriosam debitis, quam vitae, odit ab alias, praesentium numquam ad possimus! Delectus quidem itaque sequi consectetur fugiat, porro in!</p>
+                <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                </div>
+            </div>
+            <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                <img src="../assets/Logos/la25.jpg" class="card-img-top img-fluid img-thumbnail" alt="la25logo">
+                <div class="card-body">
+                <h5 class="card-title">La 25</h5>
+                <p class="card-text">El mejor restaurante para disfrutar de un excelente momento en familia. Ofrecemos un amplio menu de comidas aptas para todos los tipos de paladares.</p>
+                <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                </div>
+            </div>
+            <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                <img src="../assets/Logos/meet.jpg" class="card-img-top img-fluid img-thumbnail" alt="meetlogo">
+                <div class="card-body">
+                <h5 class="card-title">Meet</h5>
+                <p class="card-text">Un lugar ideal para compartir buenos momentos con quien mas quieras. Perfecto para los amantes del buen comer y la cocina de alto nivel.</p>
+                <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                </div>
+            </div>
         </div>
-        <div></div>
-        <div>
-            <a href="../pages/local.html"><img class="comida__alt" src="../assets/Logos/Petra logo.jpg" alt="pettralogo"></a>
+    </div>
+    
+    <p class="display-1 text-center tipo__comida" id="rapida"><strong>Comida Rápida</strong></p>
+    <div class="card-group container-fluid container-sm cartas">
+        <div class="row">
+            <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                <img src="../assets/Logos/kfc.jpg" class="card-img-top img-fluid img-thumbnail" alt="kfclogo">
+                <div class="card-body">
+                <h5 class="card-title">KFC</h5>
+                <p class="card-text">Kentucky Fried Chicken, conocida oficialmente por sus siglas KFC, es una cadena de restaurantes de comida rápida estadounidense especializada en pollo frito, fundada por Harland D. Sanders, que pertenece al grupo Yum! Brands. Con sede en Louisville, Kentucky, cuenta con más de 22 000 restaurantes en 150 países y se encuentra en la segunda posición a nivel de franquicias, por detrás de McDonald's</p>
+                <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                </div>
+            </div>
+            <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                <img src="../assets/Logos/Mcdonalds.png" class="card-img-top img-fluid img-thumbnail" alt="mcdonaldslogo">
+                <div class="card-body">
+                <h5 class="card-title">McDonalds</h5>
+                <p class="card-text">McDonald's es una franquicia de restaurantes de comida rápida estadounidense con sede en Chicago, Illinois.​ Sus principales productos son las hamburguesas, las patatas fritas, los menús para el desayuno y los refrescos.</p>
+                <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                </div>
+            </div>
+            <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                <img src="../assets/Logos/BURGER-KING.png" class="card-img-top img-fluid img-thumbnail" alt="burguerkinglogo">
+                <div class="card-body">
+                <h5 class="card-title">Burguer King</h5>
+                <p class="card-text">Burger King, también conocida como BK, es una cadena de establecimientos de comida rápida estadounidense con sede central en Miami, Florida, fundada por James McLamore y David Edgerton, presente a nivel internacional y especializada principalmente en la elaboración de hamburguesas.</p>
+                <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                </div>
+            </div>
         </div>
-        <div>
-            <h5 class="comida__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et assumenda quasi laboriosam debitis, quam vitae, odit ab alias, praesentium numquam ad possimus! Delectus quidem itaque sequi consectetur fugiat, porro in!</h5>
+    </div>
+
+        <p class="display-1 text-center tipo__comida" id="gourmet"><strong>Gourmet</strong></p>
+        <div class="card-group container-fluid container-sm cartas">
+            <div class="row">
+                <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                    <img src="../assets/Logos/fenicia.jpg" class="card-img-top img-fluid img-thumbnail" alt="fenicialogo">
+                    <div class="card-body">
+                    <h5 class="card-title">Fenicia</h5>
+                    <p class="card-text">La comida libanesa hace ya tiempos cruzó las fronteras para imponerse como una de las cocinas más equilibradas y sanas, cuya presentación constituye un regalo para la vista. Es rica en verduras, donde lo más importante es que estén muy frescas y bonitas al momento de la escogencia. Productos indispensables como el trigo y el aceite de oliva, no pueden faltar.</p>
+                    <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                    </div>
+                </div>
+                <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                    <img src="../assets/Logos/el-zocalo-autentica-comida.jpg" class="card-img-top img-fluid img-thumbnail" alt="zocalologo">
+                    <div class="card-body">
+                    <h5 class="card-title">El Zócalo</h5>
+                    <p class="card-text">La plaza mayor de la ciudad de México es la que le da el nombre a este restaurante que ofrece a sus visitantes la autentica tradición gastronómica de esta nación. Tampico, Puebla y Veracruz son algunos de los estados que inspiran las recetas (preparadas con ingredientes importados) y la decoración de sus espacios ambientados con zócalos, máscaras y cerámicas que evocan lo mejor del país de los mariachis y corridos.</p>
+                    <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                    </div>
+                </div>
+                <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                    <img src="../assets/Logos/restaurant-LA-GALITE.jpg" class="card-img-top img-fluid img-thumbnail" alt="galitelogo">
+                    <div class="card-body">
+                    <h5 class="card-title">La Galite</h5>
+                    <p class="card-text">La Galite,  es un restaurante típico del mediterráneo, donde puedes deleitartus sentidos y a tener una experiencia inolvidable.También Disfrutas de deliciosos y tradicionales platos y recetas; otra de sus especialidades son los vinos Europeos y del Nuevo Mundo.</p>
+                    <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="comida" id="mcdonalds">
-            <a href="../pages/local.html">
-                <h3 class="comida__nombre">Mcdonalds</h3>   
-            </a>
+    
+        <p class="display-1 text-center tipo__comida" id="familiar"><strong>Familiar</strong></p>
+        <div class="card-group container-fluid container-sm cartas">
+            <div class="row">
+                <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                    <img src="../assets/Logos/san-carbon-parrilla-bar-2016.jpg" class="card-img-top img-fluid img-thumbnail" alt="carbonlogo">
+                    <div class="card-body">
+                    <h5 class="card-title">San Carbon</h5>
+                    <p class="card-text">Una parrillada convoca a los amigos y familias a reír, a conversar, a permanecer como si el tiempo no transcurriera y el día hubiese nacido tan sólo para ese momento. Por eso San Carbón garantiza que sentarse en torno a una mesa y compartir con los suyos su valioso tiempo, se convertirá en una ocasión digna del recuerdo. Por que coinciden en que la comida es un placer celestial y por considerar invaluable una buena amistad.</p>
+                    <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                    </div>
+                </div>
+                <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                    <img src="../assets/Logos/elcielo.jpg" class="card-img-top img-fluid img-thumbnail" alt="cielologo">
+                    <div class="card-body">
+                    <h5 class="card-title">El Cielo</h5>
+                    <p class="card-text">La característica "cocina creativa" deja mucho qué pensar. Pues entrar a El Cielo es encontrarse literalmente con eso: platos nuevos, originales y creaciones del chef, quién crea sopas, carnes, pescados y postres con diferentes productos, como por ejemplo su postre de limón. El diseño de El Cielo te hará sentir tranquilo, ya que se encuentra decorado con árboles que le dan una sensación natural.</p>
+                    <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                    </div>
+                </div>
+                <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                    <img src="../assets/Logos/DEJ.jpg" class="card-img-top img-fluid img-thumbnail" alt="quererlogo">
+                    <div class="card-body">
+                    <h5 class="card-title">Dejate Querer</h5>
+                    <p class="card-text">El desarrollo del concepto y la dirección de arte estuvo a cargo de la diseñadora María Adelaida Penagos (Miau). Un espacio rico en diseño, un ambiente cálido y amable, y  con una coherencia e identidad en todos los elementos que lo componen. En este bello lugar disfruta la decoración y diseño con comida y música.Disfruta10:00 a 11:00 p.m., precio especial en cocteles.</p>
+                    <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div></div>
-        <div>
-            <a href="../pages/local.html">
-                <img class="comida__imagen" src="../assets/Logos/Mcdonalds.png" alt="mcdonaldslogo">
-            </a>
+
+        <p class="display-1 text-center tipo__comida" id="bar"><strong>Bar</strong></p>
+        <div class="card-group container-fluid container-sm cartas">
+            <div class="row">
+                <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                    <img src="../assets/Logos/habanita.png" class="card-img-top img-fluid img-thumbnail" alt="habanitalogo">
+                    <div class="card-body">
+                    <h5 class="card-title">La Habanita</h5>
+                    <p class="card-text">La Habanita hace parte de la oferta gastronómica especializada de la ciudad desde hace más de siete años.A ritmo de chachachá, contradanza y son, el lugar les da a sus clientes indicios de la riqueza de la cultura cubana, cuya admiración le dio su origen.</p>
+                    <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                    </div>
+                </div>
+                <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                    <img src="../assets/Logos/triada.jpg" class="card-img-top img-fluid img-thumbnail" alt="triadalogo">
+                    <div class="card-body">
+                    <h5 class="card-title">La Triada</h5>
+                    <p class="card-text">En el restaurante bar, disfrute de la comida internacional, entradas especiales, parrilla, gratinados, preparaciones en horno de leña, sushi y cocteles y vinos importados.</p>
+                    <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                    </div>
+                </div>
+                <div class="card container-fluid col-3 bg-dark text-white" style="height: fit-content;">
+                    <img src="../assets/Logos/palmitas-siempre.jpg" class="card-img-top img-fluid img-thumbnail" alt="palmitaslogo">
+                    <div class="card-body">
+                    <h5 class="card-title">Palmitas</h5>
+                    <p class="card-text">En el restaurante bar, disfrute de la comida internacional, entradas especiales, parrilla, gratinados, preparaciones en horno de leña, sushi y cocteles y vinos importados.</p>
+                    <a href="../pages/local.html" class="btn btn-outline-warning btn-block">Ver más</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <h5 class="comida__descripcion">McDonald's es una franquicia de restaurantes de comida rápida estadounidense con sede en Chicago, Illinois.​ Sus principales productos son las hamburguesas, las patatas fritas, los menús para el desayuno y los refrescos.</h5>
-        </div>
-        <div class="comida" id="uptown">
-            <a href="../pages/local.html">
-                <h3 class="comida__nombre">Uptown Bar</h3>
-            </a>
-        </div>
-        <div></div>
-        <div>
-            <a href="../pages/local.html">
-                <img class="comida__imagen" src="../assets/Logos/uptownbar.jpg" alt="uptownbarlogo">
-            </a>
-        </div>
-        <div>
-            <h5 class="comida__descripcion">En el barrio conocido como Palermo Hollywood de Buenos Aires está The Uptown, el bar que recrea a la perfección una estación del subterráneo de Nueva York.</h5>
-        </div>
-        <div class="comida" id="meet">
-            <a href="../pages/local.html">
-                <h3 class="comida__nombre">Meet</h3> 
-            </a> 
-        </div>
-        <div></div>
-        <div>
-            <a href="../pages/local.html">
-                <img class="comida__imagen" src="..//assets/Logos/meet.jpg" alt="meetlogo">
-            </a>
-        </div>
-        <div>
-            <h5 class="comida__descripcion">Un lugar ideal para compartir buenos momentos con quien mas quieras. Perfecto para los amantes del buen comer y la cocina de alto nivel.</h5>
-        </div>
-        <div class="comida" id="la25">
-            <a href="../pages/local.html">
-                <h3 class="comida__nombre">Sandwicheria la 25</h3>
-            </a>
-        </div>
-        <div></div>
-        <div>
-            <a href="../pages/local.html">
-                <img class="comida__imagen" src="../assets/Logos/la25.jpg" alt="la25logo">
-            </a>
-        </div>
-        <div>
-            <h5 class="comida__descripcion">El mejor restaurante para disfrutar de un excelente momento en familia. Ofrecemos un amplio menu de comidas aptas para todos los tipos de paladares.</h5>
-        </div>
-    </section>
+
+    <script src="js/bootstrap.min.js"</script></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
