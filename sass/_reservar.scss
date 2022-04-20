@@ -1,0 +1,55 @@
+//Colores
+
+$color_primario: #F0A500;
+$color_secundario: #E6D5B8;
+$color_terciario: #E45826;
+$color_negro: #1B1A17;
+
+//mixin
+@mixin margin_lados($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+
+.menu--reservar{
+    @include margin_lados(auto);
+    width: 50%;
+    background-color: $color_negro;
+    border: dashed $color_terciario;
+    border-width: 8px;
+    margin-top: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reservar__titulo{
+    color: $color_terciario;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: anton;
+    letter-spacing: 2px;
+}
+
+.textarea{
+    width: 90%;
+    height: 70px;
+}
+
+.reservar__input--fecha{
+    font-size: 20px;
+}
+
+.reservar__label{
+    color: white;
+    font-size: 20px;
+}
+
+.reserva{
+    text-align: center;
+    color: $color_terciario;
+    font-size: 40px;
+    border-bottom: solid $color_terciario;
+    font-family: anton;
+    letter-spacing: 2px;
+}

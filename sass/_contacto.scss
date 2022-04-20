@@ -1,0 +1,51 @@
+//Colores
+
+$color_primario: #F0A500;
+$color_secundario: #E6D5B8;
+$color_terciario: #E45826;
+$color_negro: #1B1A17;
+
+//mixin
+@mixin margin_lados($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+
+.menu--contacto{
+    @include margin_lados(auto);
+    width: 780px;
+    background-color: $color_negro;
+    border: dashed $color_primario;
+    border-width: 8px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__label{
+    color: $color_terciario;
+    font-size: 40px;
+    font-family: anton;
+    letter-spacing: 2px;
+}
+
+.contacto__datos{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.contacto__mensaje{
+    @extend .contacto__label;
+    margin-bottom: 10px;
+}
+
+.contacto__boton{
+    background-color: $color_primario;
+    color: $color_negro;
+    border: $color_primario;
+    font-size: 20px;
+}
+
+.contacto__parrafo{
+    text-align: center;
+}

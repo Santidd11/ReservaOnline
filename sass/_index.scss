@@ -1,0 +1,126 @@
+//Colores
+
+$color_primario: #F0A500;
+$color_secundario: #E6D5B8;
+$color_terciario: #E45826;
+$color_negro: #1B1A17;
+
+//extend
+.pages_estilo{
+    text-align: center;
+    border: solid $color_negro;
+    border-radius: 20px;
+    background-color: $color_secundario;
+    text-decoration: none;
+    font-family: anton;
+    letter-spacing: 2px;
+}
+
+//mixin
+@mixin padding($padding) {
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+.cuerpoIndex{
+    @extend .cuerpo;
+    grid-template-areas: 
+    "header"
+    "pages"
+    "piedepagina";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+}
+
+.pages{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    justify-items: center;
+    grid-area: pages;
+}
+
+.pages__cercanos{
+    @extend .pages_estilo;
+    @include padding(8px);
+    color: $color_negro;
+    font-size: 40px;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.pages__cercanos__link{
+    color: $color_terciario;
+    text-decoration: none
+}
+
+.pages__tipo{
+    @extend .pages_estilo;
+    color: $color_terciario;
+    font-size: 35px;
+    margin-bottom: 40px;
+    width: 287.3px;
+    @include padding(8px);
+}
+
+.pages__tipo__opciones{
+    @extend .pages_estilo;
+    height: auto;
+    margin-bottom: 40px;
+    width: 300px;
+    color: $color_terciario;
+    font-size: 30px;
+}
+
+.pages__nombre{
+    text-align: center;
+}
+
+.pages__buscar{
+    @extend .pages_estilo;
+    @include padding(8px);
+    display: block;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid $color_terciario;
+    color: $color_negro;
+    background-color: $color_primario;
+    &:hover {
+        color: $color_negro;
+    }
+}
+
+.pages__lista{
+    @extend .pages_estilo;
+    font-size: 30px;
+    padding: 8px;
+    align-self: flex-start;
+    text-align: start;
+    text-decoration: none;
+    color: $color_terciario;
+    &:hover{
+        color: $color_terciario;
+    }
+}
+
+.pages__contacto{
+    @extend .pages_estilo;
+    font-size: 30px;
+    padding: 8px;
+    align-self: flex-end;
+    color: $color_terciario;
+    text-align: end;
+    &:hover{
+        color: $color_terciario;
+    }
+}
+
+.pages__footer{
+    display: flex;
+    margin-top: 100px;
+}

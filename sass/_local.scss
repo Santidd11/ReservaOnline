@@ -1,0 +1,174 @@
+//mixin
+@mixin margin_lados($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+
+//Colores
+
+$color_primario: #F0A500;
+$color_secundario: #E6D5B8;
+$color_terciario: #E45826;
+$color_negro: #1B1A17;
+
+
+.inicio{
+    grid-area: inicio;
+}
+
+.cuerpoLocal{
+    @extend .cuerpo;
+    grid-template-areas: 
+    "header"
+    "inicio"
+    "menu"
+    "piedepagina"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+}
+
+.petralogo{
+    display: flex;
+    justify-content: center;
+}
+
+.petralogo__img{
+    width: 20%;
+    height: 20%;
+}
+
+.descripcion{
+    @include margin_lados(auto);
+    display: block;
+    background-color: $color_negro;
+    width: 70%;
+    margin-top: 15px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.descripcion__texto{
+    color: white;
+}
+
+.caracteristicas{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu{
+    @include margin_lados(auto);
+    width: 80%;
+    background-color: $color_negro;
+    border: dashed $color_primario;
+    border-width: 8px;
+    margin-top: 15px;
+    grid-area: menu;
+}
+
+.menu__logo{
+    @include margin_lados(auto);
+    display: flex;
+}
+
+.menu__nav{
+    @include margin_lados(auto);
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    grid-area: navegacion;
+}
+
+.comida{
+    margin: 12px;
+    list-style-type: none;
+}
+
+.comida__tipo{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: $color_primario;
+    border: solid $color_primario;
+    font-family: anton;
+    letter-spacing: 2px;
+    background-color: $color_negro;
+}
+
+.comida__nombre{
+    font-family: lobster;
+    color: $color_terciario;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    transition:all .5s ease-in-out;
+    &:hover{
+        -webkit-transform:scale(1.3);
+        transform:scale(1.2);
+        color: $color_primario;
+    }
+}
+
+.comida__nombre--alt{
+    font-family: lobster;
+    color: $color_terciario;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+.comida__link{
+    text-decoration: none;
+}
+
+.comida__descripcion{
+    display: inline;
+    font-size: 20px;
+    color: white;
+    margin: 7px;
+    font-family: lobster;
+}
+
+.comida__imagen{
+    margin-left: 8px;
+    transition:all .5s ease-in-out;
+    &:hover {
+        -webkit-transform:scale(1.3);
+        transform:scale(1.2);
+    }
+}
+
+.reservar{
+    @include margin_lados(auto);
+    display: block;
+    background-color: $color_negro;
+    border-radius: 10px;
+    color: $color_terciario;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 300px;
+    text-align: center;
+    font-size: 60px;
+    font-family: anton;
+    letter-spacing: 2px;
+    transition:all .5s ease-in-out;
+    &:hover {
+        -webkit-transform:scale(1.3);
+        transform:scale(1.2);
+        color: $color_primario;
+    }
+}
+
+.facebook{
+    float: right;
+    width: 112px;
+    height: 112px;
+    margin-top: 115px;
+}
+
+.mapa{
+    width: 300px;
+    height: 225px;
+}

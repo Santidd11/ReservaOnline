@@ -1,5 +1,5 @@
 
-/*
+
 @font-face {
     font-family: "mosk";
     src: url(../fonts/Mosk\ Ultra-Bold\ 900.ttf);
@@ -23,7 +23,7 @@ html{
 a{
     text-decoration: none;
 }
-*/
+
 /*Full responsive*/
 
 
@@ -71,7 +71,7 @@ a{
 .cuerpoContacto{
     background-image: url(../assets/Images/fondo.png);
 }
-/*
+
 .header{
     grid-area: header;
 }
@@ -94,9 +94,8 @@ a{
     font-size: 70px;
     color: #1B1A17;
     text-decoration: none;
-}*/
+}
 /*Barra de navegacion*/
-/*
 .navegacion {
     list-style-type: none;
     margin: 0;
@@ -147,10 +146,8 @@ a{
 
 .navegacion__link--menu:hover {
     background-color: #dd8855;
-}*/
-
+}
 /*Slider de fotos*/
-/*
 .contenedor{
     margin: auto;
     background-color: #333;
@@ -188,11 +185,11 @@ a{
 }
 
 .listas__elemento:first-child {
-    opacity: 1;
+    opacity: 1; /*Mostramos el primer <li>*/
 }
 
 .listas__elemento:target {
-    opacity: 1;
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
 }
 
 .boton{
@@ -218,8 +215,8 @@ a{
 }
 
 /*Logo restaurante*/
-/*
-.petralogo{
+
+.petralogo{/*Despues voy a buscar un logo o fondo que ocupe el ancho de la pagina*/
     display: flex;
     justify-content: center;
 }
@@ -230,7 +227,7 @@ a{
 }
 
 /*Descripcion Restaurante*/
-/*
+
 .descripcion{
     display: block;
     background-color: #333;
@@ -254,7 +251,6 @@ a{
 }
 
 /*Menu*/
-/*
 .menu{
     width: 80%;
     background-color: #333;
@@ -372,9 +368,9 @@ a{
     width: 300px;
     height: 225px;
 }
-*/
+
 /*Estilos para el index*/
-/*
+
 .pages{
     width: 100%;
     height: auto;
@@ -499,7 +495,7 @@ a{
     display: flex;
     margin-top: 100px;
 }
-*/
+
 
 /*Estilos para lista*/
 .locales{
