@@ -5,6 +5,16 @@ $color_secundario: #E6D5B8;
 $color_terciario: #E45826;
 $color_negro: #1B1A17;
 
+.cuerpoLista{
+    @extend .cuerpo;
+    background-image: url(../assets/Images/fondo.png);
+    grid-template-areas: 
+    "header"
+    "navegacion"
+    "locales";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+}
 
 .locales{
     width: 70%;

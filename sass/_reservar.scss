@@ -11,6 +11,10 @@ $color_negro: #1B1A17;
     margin-right: $margin;
 }
 
+.cuerpoReservar{
+    background-image: url(../assets/Images/fondo.png);
+}
+
 .menu--reservar{
     @include margin_lados(auto);
     width: 50%;

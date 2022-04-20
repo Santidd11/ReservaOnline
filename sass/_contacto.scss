@@ -11,6 +11,11 @@ $color_negro: #1B1A17;
     margin-right: $margin;
 }
 
+
+.cuerpoContacto{
+    background-image: url(../assets/Images/fondo.png);
+}
+
 .menu--contacto{
     @include margin_lados(auto);
     width: 780px;
