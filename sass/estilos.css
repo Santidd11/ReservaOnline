@@ -47,6 +47,10 @@
   text-decoration: none;
 }
 
+.pages__cercanos__link:hover {
+  color: #E45826;
+}
+
 .pages__tipo {
   color: #E45826;
   font-size: 35px;
@@ -352,11 +356,12 @@
           animation-name: slidein;
 }
 
-.cartas {
+.c__cartas {
+  position: relative;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-name: slideout;
-          animation-name: slideout;
+  -webkit-animation-name: movimiento;
+          animation-name: movimiento;
 }
 
 .cuerpoReservar {
@@ -513,7 +518,7 @@
 
 .navegacion__link--menu:hover {
   background-color: #E45826;
-  color: #1B1A17;
+  color: black;
 }
 
 @font-face {
@@ -553,18 +558,20 @@
   }
 }
 
-@-webkit-keyframes slideout {
+@-webkit-keyframes movimiento {
   0% {
-    translate: -3000px;
+    -webkit-transform: translate(-3000px);
+            transform: translate(-3000px);
   }
   100% {
     translate: 0px;
   }
 }
 
-@keyframes slideout {
+@keyframes movimiento {
   0% {
-    translate: -3000px;
+    -webkit-transform: translate(-3000px);
+            transform: translate(-3000px);
   }
   100% {
     translate: 0px;

@@ -1,3 +1,50 @@
+//Colores
+
+$paleta: "primaria";
+
+$color_primario: "";
+$color_secundario: "";
+$color_terciario: "";
+$color_negro: "";
+
+$paleta_primaria: (
+    "color1": #F0A500,
+    "color2": #E6D5B8,
+    "color3": #E45826,
+    "color4": #1B1A17,
+);
+
+$paleta_secundaria: (
+    "color1": #F24A72,
+    "color2": #EAEA7F,
+    "color3": #FDAF75,
+    "color4": #333C83,
+);
+
+$paleta_terciaria: (
+    "color1": #B97A95,
+    "color2": #F6AE99,
+    "color3": #F6AE99,
+    "color4": #716F81,
+);
+
+@if $paleta == "secundaria" {
+    $color_primario: map-get($paleta_secundaria, color1);
+    $color_secundario: map-get($paleta_secundaria, color2);
+    $color_terciario: map-get($paleta_secundaria, color3);
+    $color_negro: map-get($paleta_secundaria, color4);
+} @else if $paleta == "terciaria" {
+    $color_primario: map-get($paleta_terciaria, color1);
+    $color_secundario: map-get($paleta_terciaria, color2);
+    $color_terciario: map-get($paleta_terciaria, color3);
+    $color_negro: map-get($paleta_terciaria, color4);
+} @else if $paleta == "primaria" {
+    $color_primario: map-get($paleta_primaria, color1);
+    $color_secundario: map-get($paleta_primaria, color2);
+    $color_terciario: map-get($paleta_primaria, color3);
+    $color_negro: map-get($paleta_primaria, color4);
+}
+
 //extend
 .nav_bloque{
     list-style-type: none;
@@ -14,9 +61,17 @@
 
 //estilos
 .navegacion {
+    @if $paleta == "secundaria" {
+        background: rgb(234,234,127);
+        background: linear-gradient(0deg, rgba(234,234,127,1) 0%, rgba(242,74,114,1) 100%);
+    } @else if $paleta == "primaria"{
+        background: rgb(230,213,184);
+        background: linear-gradient(0deg, rgba(230,213,184,1) 0%, rgba(240,165,0,1) 100%);
+    } @else if $paleta == "terciaria" {
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(185,122,149,1) 100%);
+    }
     @extend .nav_bloque;
-    background: rgb(230,213,184);
-    background: linear-gradient(0deg, rgba(230,213,184,1) 0%, rgba(240,165,0,1) 100%);
     border-width: 3px;
     display: flex;
     justify-content: flex-start;
@@ -40,12 +95,12 @@
     }
 }
 .navegacion__link--menu {
+    @extend .nav_a;
     display: block;
     color: white;
-    @extend .nav_a;
     transition:all .5s ease-in-out;
     &:hover {
         background-color: $color_terciario;
-        color: $color_negro;
+        color: black;
     }
 }
