@@ -1,9 +1,49 @@
 //Colores
 
-$color_primario: #F0A500;
-$color_secundario: #E6D5B8;
-$color_terciario: #E45826;
-$color_negro: #1B1A17;
+$paleta: "primaria";
+
+$color_primario: "";
+$color_secundario: "";
+$color_terciario: "";
+$color_negro: "";
+
+$paleta_primaria: (
+    "color1": #F0A500,
+    "color2": #E6D5B8,
+    "color3": #E45826,
+    "color4": #1B1A17,
+);
+
+$paleta_secundaria: (
+    "color1": #F24A72,
+    "color2": #EAEA7F,
+    "color3": #FDAF75,
+    "color4": #333C83,
+);
+
+$paleta_terciaria: (
+    "color1": #B97A95,
+    "color2": #F6AE99,
+    "color3": #F6AE99,
+    "color4": #716F81,
+);
+
+@if $paleta == "secundaria" {
+    $color_primario: map-get($paleta_secundaria, color1);
+    $color_secundario: map-get($paleta_secundaria, color2);
+    $color_terciario: map-get($paleta_secundaria, color3);
+    $color_negro: map-get($paleta_secundaria, color4);
+} @else if $paleta == "terciaria" {
+    $color_primario: map-get($paleta_terciaria, color1);
+    $color_secundario: map-get($paleta_terciaria, color2);
+    $color_terciario: map-get($paleta_terciaria, color3);
+    $color_negro: map-get($paleta_terciaria, color4);
+} @else if $paleta == "primaria" {
+    $color_primario: map-get($paleta_primaria, color1);
+    $color_secundario: map-get($paleta_primaria, color2);
+    $color_terciario: map-get($paleta_primaria, color3);
+    $color_negro: map-get($paleta_primaria, color4);
+}
 
 //mixin
 @mixin margin_lados($margin) {
