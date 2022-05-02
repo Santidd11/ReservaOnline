@@ -1,0 +1,29 @@
+{
+  "name": "reservaonline",
+  "version": "1.0.0",
+  "description": "Sitio web para realizar reservas en locales gastronómicos adheridos.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Santidd11/ReservaOnline.git"
+  },
+  "keywords": [
+    "reservar, reservar restaurante, comida, restaurante, local gastronomico, mejores restaurantes, restaurantes acogedores e intimos, restaurantes cercanos, restaurantes cercanos, restaurantes argentinos, local de comida"
+  ],
+  "author": "Santiago Díaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Santidd11/ReservaOnline/issues"
+  },
+  "homepage": "https://github.com/Santidd11/ReservaOnline#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

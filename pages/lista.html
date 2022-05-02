@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReservasOnline-Lista de Locales</title>
-    <link rel="stylesheet" href="../sass/estilos.css">
+    <title>ReservaOnline-Lista de Locales</title>
+    <link rel="shortcut icon" href="../assets/Logos/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../libs/bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../libs/bootstrap-5.1.3-dist/js/bootstrap.min.js">
     <meta name="description" content="Te ofrecemos una lista completa de los locales que cumplan con tus requisitos de busqueda.">
@@ -14,9 +15,9 @@
 <body class="cuerpoLista">
     <header class="header">
         <a class="nombre" href="../index.html">
-            <h1 class="reservaonline">ReservasOnline</h1>
+            <h1 class="reservaonline">ReservaOnline</h1>
         </a>
-
+    <!--Barra navegacion-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light navegacion">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,6 +34,7 @@
             </div>
             </nav>
     </header>
+    <!--Navegacion por distintos tipos de locaales dentro de la pagina web-->
     <nav class="menu__nav navbar nav justify-content-center container-fluid">
             <ul class="navegacion--menu">
                 <li class="navegacion__elemento"> <a class="navegacion__link--menu" href="#buffet">Buffet</a> </li>
@@ -43,6 +45,7 @@
             </ul>
     </nav>
 
+    <!--Cards Buffet-->
     <p class="display-1 text-center tipo__comida" id="buffet"><strong>Buffet</strong></p>
     <div class="c__cartas card-group container-fluid container-sm my-4 c__cartas">
         <div class="row">
@@ -73,6 +76,7 @@
         </div>
     </div>
     
+    <!--Cards Comida rapida-->
     <p class="display-1 text-center tipo__comida" id="rapida"><strong>Comida Rápida</strong></p>
     <div class="card-group container-fluid container-sm cartas">
         <div class="row">
@@ -103,6 +107,7 @@
         </div>
     </div>
 
+    <!--Cards Gourmet-->
         <p class="display-1 text-center tipo__comida" id="gourmet"><strong>Gourmet</strong></p>
         <div class="card-group container-fluid container-sm cartas">
             <div class="row">
@@ -132,7 +137,9 @@
                 </div>
             </div>
         </div>
+    </div>
     
+    <!--Cards Familiar-->
         <p class="display-1 text-center tipo__comida" id="familiar"><strong>Familiar</strong></p>
         <div class="card-group container-fluid container-sm cartas">
             <div class="row">
@@ -162,7 +169,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <!--Cards Bar-->
         <p class="display-1 text-center tipo__comida" id="bar"><strong>Bar</strong></p>
         <div class="card-group container-fluid container-sm cartas">
             <div class="row">

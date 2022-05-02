@@ -105,6 +105,7 @@ a{
 .cuerpo{
     background-image: url("../assets/Images/fondo.png");
     display: grid;
+    background-attachment: fixed;
 }
 
 .header{

@@ -1,0 +1,820 @@
+.pages_estilo, .pages__cercanos, .pages__tipo, .pages__tipo__opciones, .pages__buscar, .pages__lista, .pages__contacto {
+  text-align: center;
+  border: solid #1B1A17;
+  border-radius: 20px;
+  background-color: #E6D5B8;
+  text-decoration: none;
+  font-family: anton;
+  letter-spacing: 2px;
+}
+
+.cuerpoIndex {
+      grid-template-areas: "header" "pages" "piedepagina";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+}
+
+.pages {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+  justify-items: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: pages;
+}
+
+.pages__cercanos {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #1B1A17;
+  font-size: 40px;
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.pages__cercanos__link {
+  color: #E45826;
+  text-decoration: none;
+}
+
+.pages__cercanos__link:hover {
+  color: #E45826;
+}
+
+.pages__tipo {
+  color: #E45826;
+  font-size: 35px;
+  margin-bottom: 40px;
+  width: 287.3px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.pages__tipo__opciones {
+  height: auto;
+  margin-bottom: 40px;
+  width: 300px;
+  color: #E45826;
+  font-size: 30px;
+}
+
+.pages__nombre {
+  text-align: center;
+}
+
+.pages__buscar {
+  padding-left: 8px;
+  padding-right: 8px;
+  display: block;
+  font-size: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid #E45826;
+  color: #1B1A17;
+  background-color: #F0A500;
+}
+
+.pages__buscar:hover {
+  color: #1B1A17;
+}
+
+.pages__lista {
+  font-size: 30px;
+  padding: 8px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: start;
+  text-decoration: none;
+  color: #E45826;
+}
+
+.pages__lista:hover {
+  color: #E45826;
+}
+
+.pages__contacto {
+  font-size: 30px;
+  padding: 8px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #E45826;
+  text-align: end;
+}
+
+.pages__contacto:hover {
+  color: #E45826;
+}
+
+.pages__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+}
+
+.inicio {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: inicio;
+}
+
+.cuerpoLocal {
+      grid-template-areas: "header" "inicio" "menu" "piedepagina";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+}
+
+.petralogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.petralogo__img {
+  width: 20%;
+  height: 20%;
+}
+
+.descripcion {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: #1B1A17;
+  width: 70%;
+  margin-top: 15px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.descripcion__texto {
+  color: white;
+}
+
+.caracteristicas {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background-color: #1B1A17;
+  border: dashed #F0A500;
+  border-width: 8px;
+  margin-top: 15px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: menu;
+}
+
+.menu__logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__nav {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: navegacion;
+}
+
+.comida {
+  margin: 12px;
+  list-style-type: none;
+}
+
+.comida__tipo {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: #F0A500;
+  border: solid #F0A500;
+  font-family: anton;
+  letter-spacing: 2px;
+  background-color: #1B1A17;
+}
+
+.comida__nombre {
+  font-family: lobster;
+  color: #E45826;
+  margin-top: 35px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.comida__nombre:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.2);
+  color: #F0A500;
+}
+
+.comida__nombre--alt {
+  font-family: lobster;
+  color: #E45826;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+
+.comida__link {
+  text-decoration: none;
+}
+
+.comida__descripcion {
+  display: inline;
+  font-size: 20px;
+  color: white;
+  margin: 7px;
+  font-family: lobster;
+}
+
+.comida__imagen {
+  margin-left: 8px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.comida__imagen:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.2);
+}
+
+.reservar {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: #1B1A17;
+  border-radius: 10px;
+  color: #E45826;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  width: 300px;
+  text-align: center;
+  font-size: 60px;
+  font-family: anton;
+  letter-spacing: 2px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.reservar:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.2);
+  color: #F0A500;
+}
+
+.facebook {
+  float: right;
+  width: 112px;
+  height: 112px;
+  margin-top: 115px;
+}
+
+.mapa {
+  width: 300px;
+  height: 225px;
+}
+
+.cuerpoLista {
+  background-image: url(../assets/Images/fondo.png);
+      grid-template-areas: "header" "navegacion" "locales";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+}
+
+.locales {
+  width: 70%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: (auto)[11];
+      grid-template-rows: repeat(11, auto);
+  background-color: #1B1A17;
+  border: dashed #F0A500;
+  border-width: 8px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15%;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: locales;
+}
+
+.comida__alt {
+  width: 225px;
+  height: 225px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.comida__alt:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.2);
+}
+
+.nombre {
+  text-decoration: none;
+}
+
+.tipo__comida {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+.c__cartas {
+  position: relative;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: movimiento;
+          animation-name: movimiento;
+}
+
+.cuerpoReservar {
+  background-image: url(../assets/Images/fondo.png);
+}
+
+.menu--reservar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: #1B1A17;
+  border: dashed #E45826;
+  border-width: 8px;
+  margin-top: 15px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reservar__titulo {
+  color: #E45826;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: anton;
+  letter-spacing: 2px;
+}
+
+.textarea {
+  width: 90%;
+  height: 70px;
+}
+
+.reservar__input--fecha {
+  font-size: 20px;
+}
+
+.reservar__label {
+  color: white;
+  font-size: 20px;
+}
+
+.reserva {
+  text-align: center;
+  color: #E45826;
+  font-size: 40px;
+  border-bottom: solid #E45826;
+  font-family: anton;
+  letter-spacing: 2px;
+}
+
+.cuerpoContacto {
+  background-image: url(../assets/Images/fondo.png);
+}
+
+.menu--contacto {
+  margin-left: auto;
+  margin-right: auto;
+  width: 780px;
+  background-color: #1B1A17;
+  border: dashed #F0A500;
+  border-width: 8px;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacto__label, .contacto__mensaje {
+  color: #E45826;
+  font-size: 40px;
+  font-family: anton;
+  letter-spacing: 2px;
+}
+
+.contacto__datos {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.contacto__mensaje {
+  margin-bottom: 10px;
+}
+
+.contacto__boton {
+  background-color: #F0A500;
+  color: #1B1A17;
+  border: #F0A500;
+  font-size: 20px;
+}
+
+.contacto__parrafo {
+  text-align: center;
+}
+
+.nav_bloque, .navegacion, .navegacion--menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav_a, .navegacion__link, .navegacion__link--menu {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navegacion {
+  background: #e6d5b8;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e6d5b8), to(#f0a500));
+  background: linear-gradient(0deg, #e6d5b8 0%, #f0a500 100%);
+  border-width: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.navegacion--menu {
+  background-color: #1B1A17;
+  display: inline-block;
+}
+
+.navegacion__elemento {
+  float: left;
+}
+
+.navegacion__link {
+  display: block;
+  color: #E45826;
+}
+
+.navegacion__link:hover {
+  background-color: #1B1A17;
+}
+
+.navegacion__link--menu {
+  display: block;
+  color: white;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.navegacion__link--menu:hover {
+  background-color: #E45826;
+  color: black;
+}
+
+@font-face {
+  font-family: 'mosk';
+  src: url("../fonts/Mosk Ultra-Bold 900.ttf");
+}
+
+@font-face {
+  font-family: 'anton';
+  src: url("../fonts/Anton-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'anton';
+  src: url("../fonts/Lobster-Regular.ttf");
+}
+
+@-webkit-keyframes slidein {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes movimiento {
+  0% {
+    -webkit-transform: translate(-3000px);
+            transform: translate(-3000px);
+  }
+  100% {
+    translate: 0px;
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    -webkit-transform: translate(-3000px);
+            transform: translate(-3000px);
+  }
+  100% {
+    translate: 0px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cuerpo, .cuerpoIndex, .cuerpoLocal, .cuerpoLista {
+  background-image: url("../assets/Images/fondo.png");
+  display: -ms-grid;
+  display: grid;
+  background-attachment: fixed;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.piedepagina {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: piedepagina;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.reservaonline {
+  font-family: mosk;
+  text-align: center;
+  background-color: #F0A500;
+  margin: 0%;
+  font-size: 70px;
+  color: #1B1A17;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .reservaonline {
+    font-size: 35px;
+  }
+  .navegacion__link {
+    font-family: mosk;
+    font-size: 60%;
+    color: #1B1A17;
+  }
+  /*Index Responsive*/
+  .pages__cercanos {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .pages__tipo {
+    font-size: 25px;
+    width: 212px;
+    margin-bottom: 0px;
+  }
+  .pages__tipo__opciones {
+    font-size: 25px;
+  }
+  .pages__nombre {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .pages__buscar {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .pages__div {
+    height: auto;
+    margin-bottom: 0px;
+  }
+  .pages {
+    height: auto;
+  }
+  .pages__lista {
+    font-size: 20px;
+    padding: 4px;
+  }
+  .pages__contacto {
+    font-size: 20px;
+    padding: 4px;
+  }
+  /*Lista responsive*/
+  .locales {
+    width: 100%;
+    border: none;
+    margin: 0px;
+    -ms-grid-columns: 150px auto;
+        grid-template-columns: 150px auto;
+  }
+  .navegacion__link--menu {
+    padding: 4px;
+    border: #E45826;
+    border-width: 1px;
+  }
+  .menu__nav {
+    width: 100%;
+  }
+  .navegacion--menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .comida__nombre {
+    font-size: 25px;
+  }
+  .comida__descripcion {
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .comida__alt {
+    width: 100px;
+    height: 100px;
+  }
+  .comida__imagen {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .reservaonline {
+    font-size: 35px;
+  }
+  .navegacion__link {
+    font-family: mosk;
+    font-size: 60%;
+    color: #1B1A17;
+  }
+  /*Local responsive*/
+  .contenedor {
+    display: none;
+  }
+  .descripcion {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+  .menu {
+    width: 95%;
+    border: none;
+  }
+  .menu__imagen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    width: auto;
+  }
+  .menu__logo {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    width: auto;
+    padding: 0px;
+  }
+  .listas {
+    position: relative;
+  }
+  .listas__elemento {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .listas__imagen {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .navbar-center {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+            transform: translatex(-50%);
+  }
+  .boton {
+    display: none;
+  }
+  .comida {
+    padding-left: 0px;
+  }
+  .mapa {
+    width: 100px;
+    height: 100px;
+  }
+  .reservar {
+    font-size: 35px;
+    padding: 0px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  .facebook {
+    margin-top: 0px;
+  }
+  /*Reservar responsive*/
+  .menu--reservar {
+    width: 90%;
+    border-width: 0px;
+    margin-right: 10px;
+  }
+  /*Contacto Responsive*/
+  .menu--contacto {
+    width: 98%;
+    border-width: 0px;
+  }
+  .contacto__label, .contacto__mensaje {
+    font-size: 25px;
+  }
+  .contacto__datos {
+    font-size: 12px;
+  }
+  .contacto__mensaje {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
