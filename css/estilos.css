@@ -292,14 +292,13 @@
 
 .facebook {
   float: right;
-  width: 112px;
-  height: 112px;
-  margin-top: 115px;
+  width: auto;
+  height: 150px;
 }
 
 .mapa {
-  width: 300px;
-  height: 225px;
+  width: auto;
+  height: 150px;
 }
 
 .cuerpoLista {
@@ -362,6 +361,11 @@
           animation-duration: 3s;
   -webkit-animation-name: movimiento;
           animation-name: movimiento;
+}
+
+.sombras {
+  -webkit-box-shadow: 0px 11px 41px 3px rgba(0, 0, 0, 0.74);
+  box-shadow: 0px 11px 41px 3px rgba(0, 0, 0, 0.74);
 }
 
 .cuerpoReservar {
@@ -463,6 +467,7 @@
 
 .contacto__parrafo {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .nav_bloque, .navegacion, .navegacion--menu {
@@ -600,6 +605,7 @@ a {
 }
 
 .piedepagina {
+  margin-top: 50px;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: piedepagina;
@@ -783,6 +789,9 @@ a {
   .comida {
     padding-left: 0px;
   }
+  .comida__imagen {
+    pointer-events: none;
+  }
   .mapa {
     width: 100px;
     height: 100px;
@@ -795,6 +804,8 @@ a {
   }
   .facebook {
     margin-top: 0px;
+    width: auto;
+    height: 70px;
   }
   /*Reservar responsive*/
   .menu--reservar {
